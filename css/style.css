@@ -21,17 +21,19 @@ body {
   border: solid 1px rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
-.modal-content {
-  background: rgb(51, 51, 51);
+.form-content {
+  background: rgb(51, 51, 51, 0.7);
   background: linear-gradient(
     0deg,
     rgba(51, 51, 51, 1) 0%,
     rgba(31, 31, 31, 1) 100%
   );
   color: #fff;
+  width: 80vw;
+  border-radius: 15px;
 }
 .btn-close {
-    background-color: rgba(255, 0, 0, 0.802);
+  background-color: rgba(255, 0, 0, 0.802);
 }
 .fa-paper-plane,
 .fa-times {

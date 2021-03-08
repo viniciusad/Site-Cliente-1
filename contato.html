@@ -62,14 +62,31 @@
             </div>
         </section> -->
 
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+        <section class="container-fluid">
+            <div class="p-4">
+                <form action="enviar.php" method="post">
+                    <div class="form-content p-4">
+                        <div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Digite seu nome (obrigatório)</label>
+                                <input type="text" name="txtnome" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Digite seu e-mail (obrigatório)</label>
+                                <input type="text" name="txtemail" id="email" class="form-control" placeholder="@" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="msg" class="form-label">Digite sua mensagem (obrigatório)</label>
+                                <textarea name="txtmsg" rows="5" id="msg" class="form-control" required></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <input type="submit" value="Enviar" class="btn btn-primary w-75"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
 
 
     </main>
