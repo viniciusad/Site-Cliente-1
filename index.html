@@ -53,9 +53,9 @@
 
 
     <!--==================== MODAL CONTATO =======================-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <form action="" method="post">
+    <form action="./enviar.php" method="post"></form>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
@@ -65,15 +65,15 @@
                     <form>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Digite seu nome (obrigatório)</label>
-                            <input type="text" name="txtnome" class="form-control" id="recipient-name" required>
+                            <input type="text" name="txtnome" class="form-control" required>
                         </div>
                         <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Digite seu e-mail (obrigatório)</label>
-                        <input type="text" name="txtemail" class="form-control" id="recipient-name" placeholder="@" required>
+                        <input type="text" name="txtemail" class="form-control" placeholder="@" required>
                         </div>
                         <div class="mb-3">
                         <label for="message-text" class="col-form-label">Digite sua mensagem (obrigatório)</label>
-                        <textarea name="txtmsg" class="form-control" id="message-text" rows="5" required></textarea>
+                        <textarea name="txtmsg" class="form-control" rows="5" required></textarea>
                         </div>
                     </form>
                     </div>
@@ -82,9 +82,9 @@
                     <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i>Enviar</button>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
-      </div>
+    </form>
 
 <!-- =============== ESTRELAS BACKGROUND =============== -->
     <div class="sky m-0">
