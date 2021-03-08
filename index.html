@@ -39,7 +39,7 @@
                             <a class="nav-link" href="noticias.html">Notícias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contato.html">Contato</a>
+                            <a class="nav-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#ingressos"><i class="p-2 pt-0 fas fa-ticket-alt"></i>Ingressos</a>
@@ -50,6 +50,41 @@
               </nav>
         </div>
     </header>
+
+
+    <!--==================== MODAL CONTATO =======================-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form action="" method="post">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Digite seu nome (obrigatório)</label>
+                            <input type="text" name="txtnome" class="form-control" id="recipient-name" required>
+                        </div>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Digite seu e-mail (obrigatório)</label>
+                        <input type="text" name="txtemail" class="form-control" id="recipient-name" placeholder="@" required>
+                        </div>
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Digite sua mensagem (obrigatório)</label>
+                        <textarea name="txtmsg" class="form-control" id="message-text" rows="5" required></textarea>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer justify-content-around">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fas fa-times"></i>Fechar</button>
+                    <button type="submit" value="enviar" class="btn btn-primary"><i class="fas fa-paper-plane"></i>Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
 
 <!-- =============== ESTRELAS BACKGROUND =============== -->
     <div class="sky m-0">

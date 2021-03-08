@@ -20,4 +20,3 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 /* ============================== SCROLL TOP ============================== */
-var mybutton = document.getElementById("linkmap");
