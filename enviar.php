@@ -29,7 +29,7 @@
 
     <script>
         alert('Mensagem enviada com sucesso!');
-        location.href = "a20210304a_formularioPHP.html";
+        location.href = "index.html";
     </script>
 
 </body>
