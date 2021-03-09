@@ -4,6 +4,9 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
 }
+.navbar-escuro {
+  background-color: #000;
+}
 .nav-item {
   display: flex;
   justify-content: center;
@@ -55,6 +58,7 @@ h1 {
   background-color: #000;
   color: #fff;
   width: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
 }
@@ -91,4 +95,15 @@ h1 {
   color: #000;
   background-color: rgba(255, 255, 255, 0.6);
 }
-/* =============== BOTÃO VOLTAR PARA O TOPO =============== */
+
+/* =============== RESPONSIVE STYLES =============== */
+
+@media only screen and (max-width: 992px) {
+  .card {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
+  }
+}

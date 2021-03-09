@@ -4,10 +4,9 @@ html {
 }
 main,
 body {
-  /* position: absolute; */
   margin-top: 50px;
   background: rgb(0, 0, 0);
-  z-index: 1;
+  z-index: 10;
 }
 .sky {
   background-color: black;
@@ -68,7 +67,7 @@ body {
     301px 1521px #fff, 1857px 753px #fff, 766px 1720px #fff, 622px 279px #fff,
     879px 1955px #fff, 855px 49px #fff, 492px 1605px #fff, 414px 885px #fff,
     1779px 626px #fff, 1036px 124px #fff, 1542px 1731px #fff;
-  animation: animStar 150s linear infinite;
+  animation: animStar 100s linear infinite;
 }
 #stars2:after {
   content: "*";
