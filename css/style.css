@@ -22,24 +22,16 @@ body {
   border-radius: 5px;
 }
 .form-content {
-  background: rgb(51, 51, 51, 0.7);
-  background: linear-gradient(
-    0deg,
-    rgba(51, 51, 51, 1) 0%,
-    rgba(31, 31, 31, 1) 100%
-  );
+  background: rgba(53, 53, 53, 0.3);
   color: #fff;
-  width: 80vw;
+  width: 70vw;
   border-radius: 15px;
-}
-.btn-close {
-  background-color: rgba(255, 0, 0, 0.802);
+  box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
 }
 .fa-paper-plane,
 .fa-times {
   padding: 0 5px 0 0;
 }
-
 .linkmap {
   position: fixed;
   white-space: nowrap;
@@ -55,7 +47,29 @@ body {
   color: rgb(200, 172, 255);
   opacity: 0.8;
 }
-
+h1 {
+  color: #fff;
+  padding: 15px;
+}
+.card {
+  background-color: #000;
+  color: #fff;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
+}
+.card img {
+  z-index: 2;
+  border-radius: 20px 20px 0 0;
+}
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
+  z-index: 2;
+}
 /* =============== BOTÃO VOLTAR PARA O TOPO =============== */
 #back-top {
   display: flex;

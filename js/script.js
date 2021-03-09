@@ -19,9 +19,8 @@ function scrollFunction() {
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }
-/* ============================== SCROLL TOP ============================== */
 
-
+/* ============================== FORMULÁRIO ============================== */
 function formEnviado() {
     alert('Mensagem enviada com sucesso!');
     location.href = "index.html";

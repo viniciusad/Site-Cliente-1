@@ -1,17 +1,12 @@
 html {
-  height: 100%;
-  width: 100%;
   background: rgb(0, 0, 0);
-  /* background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(31, 31, 31, 1) 100%
-  ); */
   /* overflow: hidden; */
 }
-main {
-  position: absolute;
-  margin-top: 100px;
+main,
+body {
+  /* position: absolute; */
+  margin-top: 50px;
+  background: rgb(0, 0, 0);
   z-index: 1;
 }
 .sky {
@@ -20,7 +15,6 @@ main {
 #stars {
   width: 1px;
   height: 1px;
-  background: white;
   box-shadow: 1930px 836px #fff, 266px 1956px #fff, 219px 1633px #fff,
     938px 264px #fff, 1817px 1031px #fff, 1052px 317px #fff, 269px 600px #fff,
     48px 660px #fff, 1761px 974px #fff, 1849px 485px #fff, 936px 1766px #fff,
@@ -40,10 +34,9 @@ main {
   content: "*";
   color: #fff;
   position: absolute;
-  top: 900px;
+  top: 00px;
   width: 1px;
   height: 1px;
-  background: white;
   box-shadow: 1930px 836px #fff, 266px 1956px #fff, 219px 1633px #fff,
     938px 264px #fff, 1817px 1031px #fff, 1052px 317px #fff, 269px 600px #fff,
     48px 660px #fff, 1761px 974px #fff, 1849px 485px #fff, 936px 1766px #fff,
@@ -62,7 +55,6 @@ main {
 #stars2 {
   width: 2px;
   height: 2px;
-  background: white;
   box-shadow: 1664px 1940px #fff, 1310px 636px #fff, 840px 1318px #fff,
     1450px 135px #fff, 413px 1497px #fff, 898px 1373px #fff, 280px 299px #fff,
     1852px 28px #fff, 49px 189px #fff, 259px 1584px #fff, 622px 1983px #fff,
@@ -82,10 +74,9 @@ main {
   content: "*";
   color: #fff;
   position: absolute;
-  top: 900px;
+  top: 100px;
   width: 2px;
   height: 2px;
-  background: white;
   box-shadow: 1664px 1940px #fff, 1310px 636px #fff, 840px 1318px #fff,
     1450px 135px #fff, 413px 1497px #fff, 898px 1373px #fff, 280px 299px #fff,
     1852px 28px #fff, 49px 189px #fff, 259px 1584px #fff, 622px 1983px #fff,
@@ -104,7 +95,6 @@ main {
 #stars3 {
   width: 3px;
   height: 3px;
-  background: white;
   box-shadow: 124px 346px #fff, 1148px 112px #fff, 847px 189px #fff,
     84px 1949px #fff, 1626px 1759px #fff, 256px 270px #fff, 827px 1859px #fff,
     1718px 1221px #fff, 1696px 1336px #fff, 1863px 1437px #fff,
@@ -124,11 +114,10 @@ main {
   content: "*";
   color: #fff;
   position: absolute;
-  top: 900px;
+  top: 100px;
   left: 30px;
   width: 3px;
   height: 3px;
-  background: white;
   box-shadow: 124px 346px #fff, 1148px 112px #fff, 847px 189px #fff,
     84px 1949px #fff, 1626px 1759px #fff, 256px 270px #fff, 827px 1859px #fff,
     1718px 1221px #fff, 1696px 1336px #fff, 1863px 1437px #fff,

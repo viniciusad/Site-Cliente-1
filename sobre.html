@@ -10,18 +10,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-sm-white.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+    <link rel="stylesheet" href="css/slide-cards.scss">
     <link rel="stylesheet" href="css/style-bg.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="row p-0">
         <div class="col-md-12 p-0">
-            <nav class="navbar fixed-top navbar-expand-md navbar-dark p-0">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark p-0">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html">
                     <img src="assets/logo-sm-white.png">
                   </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -47,20 +50,92 @@
                     </ul>
                   </div>
                 </div>
-              </nav>
+            </nav>
         </div>
     </header>
     <main>
-        <!-- <section>
-            <div class="linkmap p-3 pt-0">
-                <span><a href="/">Home</a> 
-                    <span class="linkmap-separator"> > </span>
-                    <span><a href="/sobre/">Sobre</a>
-                        <span class="linkmap-separator"></span>
-                    </span>
-                </span>
+<!--================================ ELENCO ================================-->  
+        <div class="container">
+            <div class="text-center p-2">
+            <h1>A Companhia de Teatro</h1>
+            </div>          
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col mb-5">
+                    <div class="grow card h-100">
+                        <img src="./assets/elenco/elenco-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Adrien Legrand</h5>
+                        <p class="card-text">Atuou em Alice Através do Espelho, A Caminho de Casa, Toda Nudez será Castigada, Mãe Coragem e seus Filhos e Hamlet. Fora da companhia, atuou também em A Visita da Velha Senhora, com direção de Moacyr Góes, O Ateliê Voador.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Integrante desde 2004</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="grow card h-100">
+                        <img src="./assets/elenco/elenco-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Inès Deforest</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Integrante desde 2010</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="grow card h-100">
+                        <img src="./assets/elenco/elenco-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Edwige Fay</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Integrante desde 2004</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section> -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col mb-5">
+                    <div class="grow card h-100">
+                        <img src="./assets/elenco/elenco-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">James Deniaud</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Integrante desde 2007</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="grow card h-100">
+                        <img src="./assets/elenco/elenco-5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Godefrey Petit</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Integrante desde 2007</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="grow card h-100">
+                        <img src="./assets/elenco/elenco-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Urbain Monette</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Integrante desde 2004</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 <!-- =============== ESTRELAS BACKGROUND =============== -->
@@ -74,6 +149,8 @@
 <button onclick="topFunction()" id="back-top" title="Início da página"><i class="fas fa-arrow-up"></i></button>
 
 <!-- =============== SCRIPTS =============== -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></Script>
     <script src="./js/script.js"></script>
     <script src="./bootstrap5/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
