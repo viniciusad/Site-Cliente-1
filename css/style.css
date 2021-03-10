@@ -4,8 +4,26 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
 }
+h1 {
+  color: #fff;
+}
 .navbar-escuro {
   background-color: #000;
+}
+#navbarSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menubutton {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(44, 44, 44, 0.8) 100%
+  );
+  width: 40px;
+  height: 50px;
 }
 .nav-item {
   display: flex;
@@ -13,7 +31,6 @@ body {
 }
 .nav-item a {
   font-size: 1.3em;
-  margin: 0 5px;
   cursor: pointer;
 }
 .nav-item a:hover {
@@ -23,6 +40,19 @@ body {
 .active {
   border: solid 1px rgba(255, 255, 255, 0.2);
   border-radius: 5px;
+}
+.ingressos {
+  background-image: url("/assets/ticket-1.png");
+  background-clip: border-box;
+  background-size: 80px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.ingressos h4 {
+  color: #fff;
+  opacity: none;
+  z-index: 1;
 }
 .form-content {
   background: rgba(53, 53, 53, 0.3);
@@ -49,10 +79,6 @@ body {
 .linkmap-separator {
   color: rgb(200, 172, 255);
   opacity: 0.8;
-}
-h1 {
-  color: #fff;
-  padding: 15px;
 }
 .card {
   background-color: #000;

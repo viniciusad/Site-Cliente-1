@@ -42,22 +42,19 @@ function formEnviado() {
 // }
 function openAndCloseNav() {
   var n = document.getElementById("navbarNav");
-  var link = document.getElementById("menuLink");
   var corpo = document.getElementById("main");
+  var menutop = document.getElementById("navbarSlider");
 
   if (n.style.display === "none") {
-    n.style.top = "0";
-    n.style.backgroundImage = "url('../assets/cortina-vermelha.png')";
-    n.style.backgroundPosition = "center";
-    n.style.backgroundRepeat = "no-repeat";
-    n.style.backgroundSize = "cover";
+    menutop.style.backgroundImage = "url('../assets/cortina-vermelha.png')";
+    menutop.style.backgroundPosition = "center";
+    menutop.style.backgroundRepeat = "no-repeat";
+    menutop.style.backgroundSize = "cover";
     n.style.display = "block";
     n.style.height = "300px";
-    n.style.transition = "height 2s"
-    link.style.padding = "5px";
     corpo.style.marginTop = "300px";
   } else {
     n.style.display = "none";
-    corpo.style.marginTop = "80px";
+    corpo.style.marginTop = "60px";
   }
 }
