@@ -265,7 +265,7 @@ section h1::before {
 
 .swiper-container .swiper-dots {
   z-index: 1;
-  margin-bottom: -25px;
+  margin-bottom: -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
