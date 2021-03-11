@@ -1,6 +1,18 @@
+/* ============================== OVERLAY NAV MENU ============================== */
+let overlay = document.getElementById('overlay');
+let closeMenu = document.getElementById('close-menu');
+
+document.getElementById('open-menu').addEventListener('click', function() {
+    overlay.classList.add('show-menu');
+});
+
+document.getElementById('close-menu').addEventListener('click', function() {
+    overlay.classList.remove('show-menu');
+});
+
 /* ============================== SCROLL TOP ============================== */
 // Criando Botão
-var mybutton = document.getElementById("back-top");
+let goTop = document.getElementById("back-top");
             
 // Definindo scroll para aparecer o botão
 window.onscroll = function() {
@@ -9,9 +21,9 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    mybutton.style.visibility = "visible";
+    goTop.style.visibility = "visible";
   } else {
-    mybutton.style.visibility = "hidden";
+    goTop.style.visibility = "hidden";
   }
 }
 
@@ -28,18 +40,6 @@ function formEnviado() {
 
 
 /* ============================== navbar-toggler ============================== */
-// function openNav() {
-//   document.getElementById("navbarNav").style.height = "300px";
-//   document.getElementById("main").style.marginTop = "300px";
-//   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-// }
-
-// function closeNav() {
-//   document.getElementById("navbarNav").style.visibility= "hidden";
-//   document.getElementById("navbarNav").style.height = "0";
-//   document.getElementById("main").style.marginTop= "0";
-//   document.body.style.backgroundColor = "rgba(0,0,0)";
-// }
 function openAndCloseNav() {
   var n = document.getElementById("navbarNav");
   var corpo = document.getElementById("main");
