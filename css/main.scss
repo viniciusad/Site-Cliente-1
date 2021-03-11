@@ -50,11 +50,12 @@ section {
 }
 .navoverlay {
   position: absolute;
+  z-index: 2;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 8) 0%,
-    rgba(38, 38, 38, 5) 100%
+    rgba(0, 0, 0, 5) 0%,
+    rgba(38, 38, 38, 2) 100%
   );
   margin: 0 auto;
   padding: 2em;
@@ -192,9 +193,9 @@ section {
       width: 100%;
     }
     .active {
-      background-color: rgba(255, 255, 255, 0.1);
-      border: solid 1px rgba(255, 255, 255, 0.2);
-      border-radius: 10px;
+      background-color: rgba(237, 237, 237, 0.1);
+      border: solid 1px rgba(51, 51, 51, 0.083);
+      border-radius: 10px 10px 0 0;
       padding: 20px 10px;
     }
   }
@@ -205,13 +206,16 @@ h4 {
   opacity: none;
   z-index: 1;
 }
+form {
+  padding-top: 3em;
 
-.form-content {
-  background: rgba(53, 53, 53, 0.3);
-  color: #fff;
-  width: 70vw;
-  border-radius: 15px;
-  box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
+  .form-content {
+    background: rgba(53, 53, 53, 0.3);
+    color: #fff;
+    width: 70vw;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
+  }
 }
 .fa-paper-plane,
 .fa-times {
@@ -235,13 +239,12 @@ h4 {
 .card {
   background-color: #000;
   color: #fff;
-  width: 80%;
+
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
 
   img {
-    z-index: 2;
     border-radius: 20px 20px 0 0;
   }
 }
@@ -251,20 +254,17 @@ h4 {
   &:hover {
     transform: scale(1.1);
     box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
-    z-index: 2;
   }
 }
 
 /* =============== BOTÃO VOLTAR PARA O TOPO =============== */
 #back-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 20px;
+  right: 20px;
   z-index: 99;
-  font-size: 2.3em;
+  font-size: 2em;
   border: none;
   background-color: rgba(53, 53, 53, 0.5);
   color: rgb(162, 162, 162);

@@ -5,63 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
-    <title>Sobre Black Moon Theater</title>
+    <title>Black Moon Theater</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo-sm-white.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-sm-white.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style-bg.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- =============== ESTRELAS BACKGROUND =============== -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--====================================== MENU ESCONDIDO ======================================-->
+    <nav class="navoverlay" id="overlay">
+        <img src="./assets/close-menu-white.svg" class="close-btn" id="close-menu">
+        <ul class="">
+            <li class="">
+                <a class="" href="index.html"><h2 class="underline">Início</h2>
+                <span>Subtítulo opcional</span></a>
+            </li>
+            <li class="">
+                <a class="" href="sobre.html"><h2 class="underline">Sobre</h2>
+                <span>Subtítulo opcional</span></a>
+            </li>
+            <li class="">
+                <a class="" href="agenda.html"><h2 class="underline">Agenda</h2>
+                <span>Subtítulo opcional</span></a>
+            </li>
+            <li class="">
+                <a class="" href="noticias.html"><h2 class="underline">Notícias</h2>
+                <span>Subtítulo opcional</span></a>
+            </li>
+            <li class="">
+                <a class="" href="contato.html"><h2 class="underline">Contato</h2>
+                <span>Subtítulo opcional</span></a>
+            </li>
+            <li class="">
+                <a class="" href="ingressos.html"><h2 class="underline">Ingressos</h2>
+                <span>Subtítulo opcional</span></a>
+            </li>
+        </ul>
+    </nav>
+
+<!--====================================== MENU WIDE TOPO ======================================-->
+    <header class="container-fluid fixed">
+        <div class="links">
+                <a href="index.html"><img src="./assets/logo-sm-white.png" class="logo"></a>
+            <div class="container float-right row-md-2">
+                <a href="index.html"><h2 class="links-top underline">Início</h2></a>
+                <a href="sobre.html"><h2 class="links-top underline active">Sobre</h2></a>
+                <a href="agenda.html"><h2 class="links-top underline">Agenda</h2></a>
+                <a href="noticias.html"><h2 class="links-top underline">Notícias</h2></a>
+                <a href="contato.html"><h2 class="links-top underline">Contato</h2></a>
+                <a href="ingressos.html"><h2 class="links-top underline">Ingressos</h2></a>
+            </div>
+            <img src="./assets/open-menu-white.svg" class="menu-btn float-right" id="open-menu">
+        </div>
+    </header>
+
+<!--====================================== ESTRELAS BACKGROUND ======================================-->
     <div class="sky m-0">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
     </div>
-</head>
-<body>
-<!-- =============== INICIO NAVBAR =============== -->
-    <header class="row p-0">
-        <div class="col-md-12 p-0">
-            <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar-escuro p-0">
-                <div class="container-fluid" id="navbarSlider">
-                    <div class="justify-content-center" id="navbarSlider" onmousedown="openAndCloseNav()">
-                        <button class="menubutton navbar-toggler w-100 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav text-center align-items-center">
-                        <li class="nav-item list-inline-item align-middle w-100">
-                            <a class="navbar-brand m-0 w-100" href="index.html">
-                                <img src="assets/logo-sm-white.png">
-                              </a>
-                        </li>
-                        <li class="nav-item list-inline-item align-middle w-100">
-                            <a class="nav-link w-100" href="index.html">Início</a>
-                        </li>
-                        <li class="nav-item list-inline-item align-middle w-100">
-                            <a class="nav-link w-100 active" aria-current="page"href="sobre.html">Sobre</a>
-                        </li>
-                        <li class="nav-item list-inline-item align-middle w-100">
-                            <a class="nav-link w-100" href="agenda.html">Agenda</a>
-                        </li>
-                        <li class="nav-item list-inline-item align-middle w-100">
-                            <a class="nav-link w-100" href="noticias.html">Notícias</a>
-                        </li>
-                        <li class="nav-item list-inline-item align-middle w-100">
-                            <a class="nav-link w-100" href="contato.html">Contato</a>
-                        </li>
-                        <li class="nav-item list-inline-item align-middle w-100 ingressos">
-                            <a class="nav-link w-100" href="#ingressos" alt="Comprar Ingressos" title="Comprar Ingressos"><h4>Ingressos</h4></a>
-                            <!-- <i class="p-2 pt-0 fas fa-ticket-alt"></i> -->
-                        </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+
 <!--================================ ELENCO ================================--> 
     <main id="main">
         <div class="container">

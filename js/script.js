@@ -11,24 +11,23 @@ document.getElementById('close-menu').addEventListener('click', function() {
 });
 
 /* ============================== SCROLL TOP ============================== */
-// Criando Botão
 let goTop = document.getElementById("back-top");
             
 // Definindo scroll para aparecer o botão
 window.onscroll = function() {
   scrollFunction()
 };
-
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    goTop.style.visibility = "visible";
+  if (document.documentElement.scrollTop > 100) {
+    goTop.style.display = "block";
   } else {
-    goTop.style.visibility = "hidden";
+    goTop.style.display = "none";
   }
 }
 
 // Ao clicar vai para o topo da página
 function topFunction() {
+  document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
