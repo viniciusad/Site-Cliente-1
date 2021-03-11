@@ -5,7 +5,7 @@
 
         $corpo = "  <h2>Nome: </h2> $nome <br>
                     <h2>Email: </h2> $email <br>
-                    <h2> Mensagem: </h2> $msg       ";
+                    <p> Mensagem: </p> $msg       ";
 
         $destinatario = "viniciusad@outlook.com.br";
         $assunto = "Mensagem do Site";

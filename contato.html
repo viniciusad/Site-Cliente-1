@@ -21,28 +21,28 @@
         <img src="./assets/close-menu-white.svg" class="close-btn" id="close-menu">
         <ul class="">
             <li class="">
-                <a class="" href="index.html"><h2 class="underline">Início</h2>
-                <span>Subtítulo opcional</span></a>
+                <a class="text-left" href="index.html"><h2 class="underline">Início</h2>
+                <span>Página principal</span></a>
             </li>
             <li class="">
-                <a class="" href="sobre.html"><h2 class="underline">Sobre</h2>
-                <span>Subtítulo opcional</span></a>
+                <a class="text-left" href="sobre.html"><h2 class="underline">Sobre</h2>
+                <span>A Companhia</span></a>
             </li>
             <li class="">
-                <a class="" href="agenda.html"><h2 class="underline">Agenda</h2>
-                <span>Subtítulo opcional</span></a>
+                <a class="text-left" href="agenda.html"><h2 class="underline">Agenda</h2>
+                <span>Nossas Turnês</span></a>
             </li>
             <li class="">
-                <a class="" href="noticias.html"><h2 class="underline">Notícias</h2>
-                <span>Subtítulo opcional</span></a>
+                <a class="text-left" href="noticias.html"><h2 class="underline">Notícias</h2>
+                <span>BMT na mídia</span></a>
             </li>
             <li class="">
-                <a class="" href="contato.html"><h2 class="underline">Contato</h2>
-                <span>Subtítulo opcional</span></a>
+                <a class="text-left" href="contato.html"><h2 class="underline">Contato</h2>
+                <span>Entre em contato</span></a>
             </li>
             <li class="">
-                <a class="" href="ingressos.html"><h2 class="underline">Ingressos</h2>
-                <span>Subtítulo opcional</span></a>
+                <a class="text-left" href="ingressos.html"><h2 class="underline">Ingressos</h2>
+                <span>Compre aqui</span></a>
             </li>
         </ul>
     </nav>
@@ -72,31 +72,27 @@
 
 <!--====================================== CORPO DA PÁGINA ======================================-->
     <main>
-        <div class="container">
-            <section class="row p-3 pb-3 mb-3">
+        <section class="container p-5">
+            <div class="formulario col col-md">
                 <form action="./enviar.php" method="post">
-                    <div class="form-content p-4">
-                        <div>
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">Digite seu nome (obrigatório)</label>
-                                <input type="text" name="txtnome" id="nome" class="form-control" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Digite seu e-mail (obrigatório)</label>
-                                <input type="text" name="txtemail" id="email" class="form-control" placeholder="@" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="msg" class="form-label">Digite sua mensagem (obrigatório)</label>
-                                <textarea name="txtmsg" rows="5" id="msg" class="form-control" required></textarea>
-                            </div>
-                        </div>
-                        <div class="modal-footer justify-content-center">
-                            <input type="submit" value="Enviar" class="btn btn-primary w-75" onclick="formEnviado()"></input>
-                        </div>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label"><h4>Seu nome</h4></label>
+                        <input type="text" name="txtnome" id="nome" class="form-control" placeholder="Campo obrigatório" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label"><h4>Seu e-mail</h4></label>
+                        <input type="text" name="txtemail" id="email" class="form-control" placeholder="Campo obrigatório" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="msg" class="form-label"><h4>Digite sua mensagem</h4></label>
+                        <textarea name="txtmsg" rows="5" id="msg" class="form-control" placeholder="Campo obrigatório" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" class="enviar btn btn-success" onclick="formEnviado()"></input>
                     </div>
                 </form>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
 <!-- =============== SCRIPTS =============== -->

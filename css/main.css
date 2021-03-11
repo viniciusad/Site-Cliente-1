@@ -35,30 +35,11 @@ header .menu-btn {
   margin: 20px;
 }
 
-section {
-  padding: 1em 4em;
-}
-
-section h1 {
-  font-size: 3em;
-  margin: 1em auto;
-  color: #fff;
-  width: 70%;
-}
-
-section h1::before {
-  content: " ";
-  border-top: 5px solid rgba(153, 153, 153, 0.5);
-  display: block;
-}
-
 .navoverlay {
   position: absolute;
   z-index: 2;
   background: black;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(#262626));
-  background: linear-gradient(0deg, black 0%, #262626 100%);
-  margin: 0 auto;
+  margin: 0;
   padding: 2em;
   width: 100%;
   height: 100vh;
@@ -67,6 +48,7 @@ section h1::before {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
+  overflow: auto;
 }
 
 .navoverlay .close-btn {
@@ -238,23 +220,105 @@ section h1::before {
   padding: 20px 10px;
 }
 
-h4 {
+section {
+  padding: 1em 4em;
+}
+
+section h1 {
+  font-size: 3em;
+  margin: 1em auto;
   color: #fff;
-  opacity: none;
+  width: 70%;
+}
+
+section h1::before {
+  content: " ";
+  border-top: 5px solid rgba(153, 153, 153, 0.5);
+  display: block;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-container .swiper-slide img {
+  height: 100%;
+  width: auto;
+}
+
+.swiper-container .swiper-dots {
   z-index: 1;
+  margin-bottom: -25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-container .swiper-dots .swiper-pagination-bullet {
+  height: 30px;
+  width: 30px;
+}
+
+.swiper-container .swiper-dots .swiper-pagination-bullet-active {
+  background: rgba(53, 53, 53, 0.6);
+  -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+          box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+  height: 30px;
+  width: 30px;
+}
+
+.swiper-container .swiper-arrow {
+  color: #fff;
+}
+
+.swiper-container .swiper-arrow .swiper-button-next {
+  width: 400px;
 }
 
 form {
-  padding-top: 3em;
-}
-
-form .form-content {
-  background: rgba(53, 53, 53, 0.3);
-  color: #fff;
-  width: 70vw;
   border-radius: 15px;
+  background: rgba(53, 53, 53, 0.8);
   -webkit-box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
           box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
+  max-width: 80vw;
+  padding: 2em;
+  margin-top: 4em;
+}
+
+form h4 {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 8px 0 0 0;
+}
+
+form .enviar {
+  font-size: 1.5em;
+  font-weight: 600;
+  width: 100%;
+  height: 60px;
 }
 
 .fa-paper-plane,
@@ -292,12 +356,19 @@ form .form-content {
   border-radius: 20px 20px 0 0;
 }
 
+h1 {
+  margin-top: 2em;
+  font-size: 2em;
+  color: #fff;
+}
+
 .grow {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .grow:hover {
+  z-index: 10;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
