@@ -21,10 +21,10 @@ header {
   padding: 2em;
 
   .logo {
-      background-color: transparent;
-      border-radius: 50%;
-      box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.59);
-  
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.59);
+
     img {
       width: 100px;
     }
@@ -438,6 +438,14 @@ h1 {
   .links {
     .underline {
       display: none;
+    }
+  }
+  .swiper-container {
+    .swiper-slide {
+      img {
+        height: auto;
+        width: 100%;
+      }
     }
   }
 }
