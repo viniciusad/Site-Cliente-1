@@ -24,6 +24,13 @@ header {
   padding: 2em;
 }
 
+header .logo {
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.59);
+          box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.59);
+}
+
 header .logo img {
   width: 100px;
 }
@@ -245,7 +252,7 @@ section h1::before {
 .swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #000;
+  background: transparent;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
