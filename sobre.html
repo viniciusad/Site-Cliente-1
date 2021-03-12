@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-sm-white.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style-bg.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,35 +20,35 @@
     <nav class="navoverlay" id="overlay">
         <img src="./assets/close-menu-white.svg" class="close-btn" id="close-menu">
         <ul class="">
-            <li class="">
-                <a class="text-left" href="index.html"><h2 class="underline">Início</h2>
+            <li class="text-left">
+                <a class="" href="index.html"><h2 class="underline">Início</h2>
                 <span>Página principal</span></a>
             </li>
-            <li class="">
-                <a class="text-left" href="sobre.html"><h2 class="underline">Sobre</h2>
+            <li class="text-left">
+                <a class="" href="sobre.html"><h2 class="underline">Sobre</h2>
                 <span>A Companhia</span></a>
             </li>
-            <li class="">
-                <a class="text-left" href="agenda.html"><h2 class="underline">Agenda</h2>
+            <li class="text-left">
+                <a class="" href="agenda.html"><h2 class="underline">Agenda</h2>
                 <span>Nossas Turnês</span></a>
             </li>
-            <li class="">
-                <a class="text-left" href="noticias.html"><h2 class="underline">Notícias</h2>
+            <li class="text-left">
+                <a class="" href="noticias.html"><h2 class="underline">Notícias</h2>
                 <span>BMT na mídia</span></a>
             </li>
-            <li class="">
-                <a class="text-left" href="contato.html"><h2 class="underline">Contato</h2>
+            <li class="text-left">
+                <a class="" href="contato.html"><h2 class="underline">Contato</h2>
                 <span>Entre em contato</span></a>
             </li>
-            <li class="">
-                <a class="text-left" href="ingressos.html"><h2 class="underline">Ingressos</h2>
+            <li class="text-left">
+                <a class="" href="ingressos.html"><h2 class="underline">Ingressos</h2>
                 <span>Compre aqui</span></a>
             </li>
         </ul>
     </nav>
 
 <!--====================================== MENU WIDE TOPO ======================================-->
-    <header class="container-fluid fixed">
+    <header class="container-fluid sticky-top">
         <div class="links">
                 <a href="index.html"><img src="./assets/logo-sm-white.png" class="logo"></a>
             <div class="container float-right row-md-2">
@@ -69,14 +71,39 @@
     </div>
 
 <!--================================ ELENCO ================================--> 
-    <main id="main">
+    <main>
+
+        <section class="container-fluid">
+            <!-- Swiper -->
+            <div class="swiper-container p-0 mt-4 ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide img-fluid"><img src="./assets/bg-elenco-1.png"></div>
+                    <div class="swiper-slide img-fluid"><img src="./assets/footer-bg-2.png"></div>
+                    <div class="swiper-slide img-fluid"><img src="./assets/ingressos.png"></div>
+                    <div class="swiper-slide img-fluid"><img src="./assets/teatro-1.png"></div>
+                    <div class="swiper-slide img-fluid"><img src="./assets/turne/charlie-chaplin.jpg"></div>
+                    <div class="swiper-slide img-fluid"><img src="./assets/turne/dali.jpg"></div>
+                    <div class="swiper-slide img-fluid"><img src="./assets/turne/eddie-murphy.jpg"></div>
+                    <div class="swiper-slide img-fluid"><img src="./assets/turne/frida-kahlo.jpg"></div>
+                    <div class="swiper-slide img-fluid"><img src="./assets/turne/marilyn-monroe.jpg"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-dots swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-arrow swiper-button-next"></div>
+                <div class="swiper-arrow swiper-button-prev"></div>
+            </div>
+        </section>
+
+
         <div class="container">
-            <div class="text-center p-4">
-            <h1>A Companhia de Teatro</h1>
-            </div>          
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <hr>
+            <div class="container titulo">
+                <p class="titulotxt">Quem faz a <span class="typing"></span><p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
                 <div class="col mb-5">
-                    <div class="grow card h-100">
+                    <div class="grow card h-100 p-3">
                         <img src="./assets/elenco/elenco-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Adrien Legrand</h5>
@@ -88,7 +115,7 @@
                     </div>
                 </div>
                 <div class="col mb-5">
-                    <div class="grow card h-100">
+                    <div class="grow card h-100 p-3">
                         <img src="./assets/elenco/elenco-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Inès Deforest</h5>
@@ -100,7 +127,7 @@
                     </div>
                 </div>
                 <div class="col mb-5">
-                    <div class="grow card h-100">
+                    <div class="grow card h-100 p-3">
                         <img src="./assets/elenco/elenco-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Edwige Fay</h5>
@@ -114,7 +141,7 @@
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col mb-5">
-                    <div class="grow card h-100">
+                    <div class="grow card h-100 p-3">
                         <img src="./assets/elenco/elenco-4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">James Deniaud</h5>
@@ -126,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col mb-5">
-                    <div class="grow card h-100">
+                    <div class="grow card h-100 p-3">
                         <img src="./assets/elenco/elenco-5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Godefrey Petit</h5>
@@ -138,7 +165,7 @@
                     </div>
                 </div>
                 <div class="col mb-5">
-                    <div class="grow card h-100">
+                    <div class="grow card h-100 p-3">
                         <img src="./assets/elenco/elenco-6.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Urbain Monette</h5>
@@ -157,8 +184,12 @@
 <button onclick="topFunction()" id="back-top" title="Início da página"><i class="fas fa-arrow-up"></i></button>
 
 <!-- =============== SCRIPTS =============== -->
-    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap5/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

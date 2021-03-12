@@ -1,13 +1,17 @@
 /* ============================== OVERLAY NAV MENU ============================== */
 let overlay = document.getElementById('overlay');
 let closeMenu = document.getElementById('close-menu');
+let openMenu = document.getElementById('open-menu');
 
 document.getElementById('open-menu').addEventListener('click', function() {
     overlay.classList.add('show-menu');
+    openMenu.style.display = "none";
+
 });
 
 document.getElementById('close-menu').addEventListener('click', function() {
     overlay.classList.remove('show-menu');
+    openMenu.style.display = "block";
 });
 
 /* ============================== SCROLL TOP ============================== */
@@ -18,7 +22,7 @@ window.onscroll = function() {
   scrollFunction()
 };
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 100) {
+  if (document.documentElement.scrollTop > 200) {
     goTop.style.display = "block";
   } else {
     goTop.style.display = "none";
@@ -38,7 +42,7 @@ function formEnviado() {
 }
 
 
-/* ============================== CARROSSEL DE IMAGENS ============================== */
+/* ============================== CARROSSEL DE IMAGENS SWIPER ============================== */
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   spaceBetween: 30,
@@ -67,22 +71,25 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-// /* ============================== navbar-toggler ============================== */
-// function openAndCloseNav() {
-//   var n = document.getElementById("navbarNav");
-//   var corpo = document.getElementById("main");
-//   var menutop = document.getElementById("navbarSlider");
+/* ============================== ANIMAÇÃO DE DIGITAÇÃO ============================== */
+var typed = new Typed(".typing", {
+  strings: ["Arte"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true
+})
 
-//   if (n.style.display === "none") {
-//     menutop.style.backgroundImage = "url('../assets/cortina-vermelha.png')";
-//     menutop.style.backgroundPosition = "center";
-//     menutop.style.backgroundRepeat = "no-repeat";
-//     menutop.style.backgroundSize = "cover";
+/* ============================== navbar-toggler ============================== */
+// function openAndCloseNav() {
+//   var n = document.getElementById("open-menu");
+//   var links = document.getElementById("links");
+
+//   if (document.documentElement.scrollY > 30) {
 //     n.style.display = "block";
-//     n.style.height = "300px";
-//     corpo.style.marginTop = "300px";
+//     links.style.display = "none";
 //   } else {
 //     n.style.display = "none";
-//     corpo.style.marginTop = "60px";
+//     links.style.display = "block";
 //   }
 // }
+
