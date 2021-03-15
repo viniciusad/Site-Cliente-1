@@ -10,6 +10,11 @@ html {
   a {
     text-decoration: none;
   }
+  hr {
+    margin: 20px auto;
+    background: rgba(53, 53, 53, 0.6);
+    box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+  }
 }
 
 header {
@@ -176,7 +181,8 @@ header {
 }
 .titulo {
   width: 50%;
-  height: 90px;
+  height: auto;
+  margin: 10px auto;
   background-color: rgba(114, 114, 114, 0.1);
   border-radius: 10px;
   display: flex;
@@ -187,7 +193,8 @@ header {
     font-size: 2em;
     font-weight: 700;
     color: #fff;
-    margin: 0 auto;
+    padding: 10px auto;
+    margin: 0;
   }
 }
 section {
@@ -210,6 +217,8 @@ section {
   height: 500px;
 
   .swiper-slide {
+    position: relative;
+    text-align: center;
     text-align: center;
     font-size: 18px;
     background: transparent;
@@ -227,12 +236,32 @@ section {
     -webkit-align-items: center;
     align-items: center;
 
-    img {
-      height: 100%;
-      width: auto;
+    .titulo {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 10px auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: #fff 1px solid;
+
+      .titulotxt {
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+        padding: 10px auto;
+        margin: 0;
+      }
     }
   }
-
+  .swiper-slide a {
+    height: 100%;
+    width: auto;
+  }
+  .swiper-slide img {
+    height: 100%;
+    width: auto;
+  }
   .swiper-dots {
     z-index: 1;
     margin-bottom: -10px;
@@ -260,6 +289,91 @@ section {
   }
 }
 
+.card {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
+
+  .card-img-top {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.card-turne {
+  height: auto;
+  .card-title {
+    background-color: rgba(136, 136, 136, 0.2);
+  }
+  .img-turne-container {
+    width: 50%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/*===================================== MODAL =====================================*/
+/* O Modal (background) */
+.modal1,
+.modal2,
+.modal3,
+.modal4 {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  /* Conteúdo Modal /Box */
+  .modal-content1,
+  .modal-content2,
+  .modal-content3,
+  .modal-content4 {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
+    margin: 6% auto; /* 15% top e centralizado */
+    border: 1px solid #888;
+    width: 80%;
+    height: auto;
+
+    iframe {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 600px;
+    }
+    /* Botão Fechar */
+    .close1,
+    .close2,
+    .close3,
+    .close4 {
+      background-color: rgba(99, 0, 0, 0.686);
+      color: #fff;
+      font-size: 2em;
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      font-weight: bold;
+
+      &:hover {
+        background-color: rgb(255, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/*===================================== FORMULÁRIO =====================================*/
 form {
   border-radius: 15px;
   background: rgba(53, 53, 53, 0.8);
@@ -278,6 +392,15 @@ form {
     font-weight: 600;
     width: 100%;
     height: 60px;
+  }
+}
+.grow {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    z-index: 10;
+    transform: scale(1);
+    box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
   }
 }
 
@@ -299,27 +422,6 @@ form {
 .linkmap-separator {
   color: rgb(255, 255, 255);
   opacity: 0.8;
-}
-
-.card {
-  background-color: #000;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
-
-  img {
-    border-radius: 20px 20px 0 0;
-  }
-}
-.grow {
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    z-index: 10;
-    transform: scale(1.2);
-    box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
-  }
 }
 
 /* =============== BOTÃO VOLTAR PARA O TOPO =============== */
@@ -410,6 +512,26 @@ form {
   }
   .links {
     display: none;
+  }
+  .card-turne {
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+    .turne {
+      width: 100%;
+
+      .turne-text {
+        width: 100%;
+      }
+    }
+
+    .img-turne-container {
+      width: 100%;
+      justify-content: center;
+      opacity: 1;
+      padding-bottom: 30px;
+    }
   }
 }
 

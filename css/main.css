@@ -13,6 +13,14 @@ html a {
   text-decoration: none;
 }
 
+body hr,
+html hr {
+  margin: 20px auto;
+  background: rgba(53, 53, 53, 0.6);
+  -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+          box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+}
+
 header .links {
   list-style: none;
   display: -webkit-box;
@@ -214,7 +222,8 @@ header .menu-btn {
 
 .titulo {
   width: 50%;
-  height: 90px;
+  height: auto;
+  margin: 10px auto;
   background-color: rgba(114, 114, 114, 0.1);
   border-radius: 10px;
   display: -webkit-box;
@@ -232,7 +241,8 @@ header .menu-btn {
   font-size: 2em;
   font-weight: 700;
   color: #fff;
-  margin: 0 auto;
+  padding: 10px auto;
+  margin: 0;
 }
 
 section {
@@ -257,6 +267,8 @@ section h1::before {
 }
 
 .swiper-container .swiper-slide {
+  position: relative;
+  text-align: center;
   text-align: center;
   font-size: 18px;
   background: transparent;
@@ -270,6 +282,30 @@ section h1::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.swiper-container .swiper-slide .titulo {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 10px auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: #fff 1px solid;
+}
+
+.swiper-container .swiper-slide .titulo .titulotxt {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px auto;
+  margin: 0;
+}
+
+.swiper-container .swiper-slide a {
+  height: 100%;
+  width: auto;
 }
 
 .swiper-container .swiper-slide img {
@@ -312,6 +348,251 @@ section h1::before {
   width: 400px;
 }
 
+.card {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
+          box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
+}
+
+.card .card-img-top {
+  border-radius: 20px 20px 0 0;
+}
+
+.card-turne {
+  height: auto;
+}
+
+.card-turne .card-title {
+  background-color: rgba(136, 136, 136, 0.2);
+}
+
+.card-turne .img-turne-container {
+  width: 50%;
+  height: auto;
+}
+
+.card-turne .img-turne-container img {
+  width: 100%;
+  height: auto;
+}
+
+/*===================================== MODAL =====================================*/
+/* O Modal (background) */
+.modal1,
+.modal2,
+.modal3,
+.modal4 {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Conteúdo Modal /Box */
+}
+
+.modal1 .modal-content1,
+.modal1 .modal-content2,
+.modal1 .modal-content3,
+.modal1 .modal-content4,
+.modal2 .modal-content1,
+.modal2 .modal-content2,
+.modal2 .modal-content3,
+.modal2 .modal-content4,
+.modal3 .modal-content1,
+.modal3 .modal-content2,
+.modal3 .modal-content3,
+.modal3 .modal-content4,
+.modal4 .modal-content1,
+.modal4 .modal-content2,
+.modal4 .modal-content3,
+.modal4 .modal-content4 {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
+          box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
+  margin: 6% auto;
+  /* 15% top e centralizado */
+  border: 1px solid #888;
+  width: 80%;
+  height: auto;
+  /* Botão Fechar */
+}
+
+.modal1 .modal-content1 iframe,
+.modal1 .modal-content2 iframe,
+.modal1 .modal-content3 iframe,
+.modal1 .modal-content4 iframe,
+.modal2 .modal-content1 iframe,
+.modal2 .modal-content2 iframe,
+.modal2 .modal-content3 iframe,
+.modal2 .modal-content4 iframe,
+.modal3 .modal-content1 iframe,
+.modal3 .modal-content2 iframe,
+.modal3 .modal-content3 iframe,
+.modal3 .modal-content4 iframe,
+.modal4 .modal-content1 iframe,
+.modal4 .modal-content2 iframe,
+.modal4 .modal-content3 iframe,
+.modal4 .modal-content4 iframe {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 600px;
+}
+
+.modal1 .modal-content1 .close1,
+.modal1 .modal-content1 .close2,
+.modal1 .modal-content1 .close3,
+.modal1 .modal-content1 .close4,
+.modal1 .modal-content2 .close1,
+.modal1 .modal-content2 .close2,
+.modal1 .modal-content2 .close3,
+.modal1 .modal-content2 .close4,
+.modal1 .modal-content3 .close1,
+.modal1 .modal-content3 .close2,
+.modal1 .modal-content3 .close3,
+.modal1 .modal-content3 .close4,
+.modal1 .modal-content4 .close1,
+.modal1 .modal-content4 .close2,
+.modal1 .modal-content4 .close3,
+.modal1 .modal-content4 .close4,
+.modal2 .modal-content1 .close1,
+.modal2 .modal-content1 .close2,
+.modal2 .modal-content1 .close3,
+.modal2 .modal-content1 .close4,
+.modal2 .modal-content2 .close1,
+.modal2 .modal-content2 .close2,
+.modal2 .modal-content2 .close3,
+.modal2 .modal-content2 .close4,
+.modal2 .modal-content3 .close1,
+.modal2 .modal-content3 .close2,
+.modal2 .modal-content3 .close3,
+.modal2 .modal-content3 .close4,
+.modal2 .modal-content4 .close1,
+.modal2 .modal-content4 .close2,
+.modal2 .modal-content4 .close3,
+.modal2 .modal-content4 .close4,
+.modal3 .modal-content1 .close1,
+.modal3 .modal-content1 .close2,
+.modal3 .modal-content1 .close3,
+.modal3 .modal-content1 .close4,
+.modal3 .modal-content2 .close1,
+.modal3 .modal-content2 .close2,
+.modal3 .modal-content2 .close3,
+.modal3 .modal-content2 .close4,
+.modal3 .modal-content3 .close1,
+.modal3 .modal-content3 .close2,
+.modal3 .modal-content3 .close3,
+.modal3 .modal-content3 .close4,
+.modal3 .modal-content4 .close1,
+.modal3 .modal-content4 .close2,
+.modal3 .modal-content4 .close3,
+.modal3 .modal-content4 .close4,
+.modal4 .modal-content1 .close1,
+.modal4 .modal-content1 .close2,
+.modal4 .modal-content1 .close3,
+.modal4 .modal-content1 .close4,
+.modal4 .modal-content2 .close1,
+.modal4 .modal-content2 .close2,
+.modal4 .modal-content2 .close3,
+.modal4 .modal-content2 .close4,
+.modal4 .modal-content3 .close1,
+.modal4 .modal-content3 .close2,
+.modal4 .modal-content3 .close3,
+.modal4 .modal-content3 .close4,
+.modal4 .modal-content4 .close1,
+.modal4 .modal-content4 .close2,
+.modal4 .modal-content4 .close3,
+.modal4 .modal-content4 .close4 {
+  background-color: rgba(99, 0, 0, 0.686);
+  color: #fff;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+
+.modal1 .modal-content1 .close1:hover,
+.modal1 .modal-content1 .close2:hover,
+.modal1 .modal-content1 .close3:hover,
+.modal1 .modal-content1 .close4:hover,
+.modal1 .modal-content2 .close1:hover,
+.modal1 .modal-content2 .close2:hover,
+.modal1 .modal-content2 .close3:hover,
+.modal1 .modal-content2 .close4:hover,
+.modal1 .modal-content3 .close1:hover,
+.modal1 .modal-content3 .close2:hover,
+.modal1 .modal-content3 .close3:hover,
+.modal1 .modal-content3 .close4:hover,
+.modal1 .modal-content4 .close1:hover,
+.modal1 .modal-content4 .close2:hover,
+.modal1 .modal-content4 .close3:hover,
+.modal1 .modal-content4 .close4:hover,
+.modal2 .modal-content1 .close1:hover,
+.modal2 .modal-content1 .close2:hover,
+.modal2 .modal-content1 .close3:hover,
+.modal2 .modal-content1 .close4:hover,
+.modal2 .modal-content2 .close1:hover,
+.modal2 .modal-content2 .close2:hover,
+.modal2 .modal-content2 .close3:hover,
+.modal2 .modal-content2 .close4:hover,
+.modal2 .modal-content3 .close1:hover,
+.modal2 .modal-content3 .close2:hover,
+.modal2 .modal-content3 .close3:hover,
+.modal2 .modal-content3 .close4:hover,
+.modal2 .modal-content4 .close1:hover,
+.modal2 .modal-content4 .close2:hover,
+.modal2 .modal-content4 .close3:hover,
+.modal2 .modal-content4 .close4:hover,
+.modal3 .modal-content1 .close1:hover,
+.modal3 .modal-content1 .close2:hover,
+.modal3 .modal-content1 .close3:hover,
+.modal3 .modal-content1 .close4:hover,
+.modal3 .modal-content2 .close1:hover,
+.modal3 .modal-content2 .close2:hover,
+.modal3 .modal-content2 .close3:hover,
+.modal3 .modal-content2 .close4:hover,
+.modal3 .modal-content3 .close1:hover,
+.modal3 .modal-content3 .close2:hover,
+.modal3 .modal-content3 .close3:hover,
+.modal3 .modal-content3 .close4:hover,
+.modal3 .modal-content4 .close1:hover,
+.modal3 .modal-content4 .close2:hover,
+.modal3 .modal-content4 .close3:hover,
+.modal3 .modal-content4 .close4:hover,
+.modal4 .modal-content1 .close1:hover,
+.modal4 .modal-content1 .close2:hover,
+.modal4 .modal-content1 .close3:hover,
+.modal4 .modal-content1 .close4:hover,
+.modal4 .modal-content2 .close1:hover,
+.modal4 .modal-content2 .close2:hover,
+.modal4 .modal-content2 .close3:hover,
+.modal4 .modal-content2 .close4:hover,
+.modal4 .modal-content3 .close1:hover,
+.modal4 .modal-content3 .close2:hover,
+.modal4 .modal-content3 .close3:hover,
+.modal4 .modal-content3 .close4:hover,
+.modal4 .modal-content4 .close1:hover,
+.modal4 .modal-content4 .close2:hover,
+.modal4 .modal-content4 .close3:hover,
+.modal4 .modal-content4 .close4:hover {
+  background-color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*===================================== FORMULÁRIO =====================================*/
 form {
   border-radius: 15px;
   background: rgba(53, 53, 53, 0.8);
@@ -335,6 +616,19 @@ form .enviar {
   height: 60px;
 }
 
+.grow {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  z-index: 10;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
+          box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
+}
+
 .fa-paper-plane,
 .fa-times {
   padding: 0 5px 0 0;
@@ -355,32 +649,6 @@ form .enviar {
 .linkmap-separator {
   color: white;
   opacity: 0.8;
-}
-
-.card {
-  background-color: #000;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  -webkit-box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
-          box-shadow: 4px 4px 15px -10px rgba(255, 255, 255, 0.59);
-}
-
-.card img {
-  border-radius: 20px 20px 0 0;
-}
-
-.grow {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.grow:hover {
-  z-index: 10;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
-          box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
 }
 
 /* =============== BOTÃO VOLTAR PARA O TOPO =============== */
@@ -550,6 +818,25 @@ form .enviar {
   }
   .links {
     display: none;
+  }
+  .card-turne {
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .card-turne .turne {
+    width: 100%;
+  }
+  .card-turne .turne .turne-text {
+    width: 100%;
+  }
+  .card-turne .img-turne-container {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 1;
+    padding-bottom: 30px;
   }
 }
 
