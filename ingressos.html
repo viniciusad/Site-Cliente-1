@@ -72,7 +72,82 @@
 <!--====================================== CORPO DA PÁGINA ======================================-->
     <main>
         <section>
+            <hr>
+            <div class="container-fluid text-center em-cartaz">
+                <div class="titulo">
+                    <p class="titulotxt">Em cartaz</p>
+                </div>
+                <div class="titulo">
+                    <p class="titulotxt">O espetáculo “Caros Ouvintes”</p>
+                </div>
+            </div>
+                <!--================= Abrir Modal =================-->
+                <button id="myBtninfo" class="btn btn-success w-100 rounded-0">
+                    <p>Informações e Ingressos</p>
+                </button>
 
+                <!--================= Conteúdo do Modal =================-->
+                <div id="myModalinfo" class="modalinfo">
+                    <div class="modal-contentinfo">
+                        <div class="align-content-center">
+                            <span class="closeinfo p-4">Fechar</span>
+                        </div>
+                        <div class="service">
+                            <h3>Informações</h3>
+                            <p>Teatro Vivo – Av. Dr. Chucri Zaidan, 2.460</p>
+                            <p>Temporada: 4 de março a 29 de abril, quartas, às 20h.</p>
+                            <p>Ingressos: R$50 (inteira) e R$25 (meia-entrada)</p>
+                            <p>Capacidade: 274 lugares</p>
+                            <p>Bilheteria: (21) 1234-5678</p>
+                            <p>Vendas online: www.ingresso.com.br</p>
+                            <p>Duração: 100 minutos</p>
+                            <p>Classificação: 12 anos</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="container p-3 card">
+                <!--====================================== SHARE BUTTONS ======================================-->
+                <div class="d-flex justify-content-center">
+                        <div class="mn-social-bottom-c row p-1">
+                            <a target="_blank" class="mn-social-bottom">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a target="_blank" class="mn-social-bottom">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a target="_blank" class="mn-social-bottom">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a target="_blank" class="mn-social-bottom">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <!-- <a class="mn-social-bottom" onclick="$('#mn-social-bottom-hidden').slideToggle();$('.fa-plus').toggleClass('mn-social-r')">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                            <div id="mn-social-bottom-hidden">
+                                <a target="_blank" class="mn-social-bottom">
+                                <i class="fa fa-reddit"></i>
+                                </a>
+                                <a target="_blank" class="mn-social-bottom">
+                                <i class="fa fa-pinterest-p"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                </div>
+<!--====================================== END SHARE BUTTONS ======================================-->
+                <hr>
+                <p>O espetáculo “Caros Ouvintes” retrata o começo das telenovelas, sob o ponto de vista dos atores que faziam sucesso nas radionovelas.</p>
+
+                <p>Na década de 1960, quando os aparelhos de televisão começaram a fazer parte das casas brasileiras, o público começou a prestar atenção não somente na voz dos personagens, mas também em sua imagem.</p>
+                    
+                <p>Assim, muitos atores que faziam sucesso no rádio começaram a temer a TV. Muitos galãs eram gordinhos e carecas, muitas mocinhas já eram senhoras.</p>
+
+                <p>Durante a peça o elenco da radionovela prepara uma grande apresentação ao vivo, para depois se despedir do público em um palco armado do lado de fora de uma das últimas emissoras de rádio a produzir radionovelas.</p>
+
+                <p>Na trama Vicente, interpretado pelo ator Marcello Airoldi, o produtor da radionovela, mantém um caso amoroso com a atriz Conceição, vivida pela atriz Natállia Rodrigues. Essa relação entra em crise quando ela é convidada para viver uma nova personagem, desta vez nas telenovelas.</p>
+                    
+                <p>Empenhado para que o último capítulo seja impecável, Vicente conta com a absoluta lealdade e profissionalismo do sonoplasta Eurico, interpretado por Alex Gruli e do locutor Wilson vivido por Eduardo Semerjian.</p>
+            </div>
         </section>
 
     </main>
@@ -80,9 +155,15 @@
     <button onclick="topFunction()" id="back-top" title="Topo da página"><i class="fas fa-arrow-up"></i></button>
 
 <!-- =============== SCRIPTS =============== -->
-    <script src="./bootstrap5/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap5/js/bootstrap.min.js"></script>
+    <script src="./js/modal-ingresso.js"></script>
     <script src="./js/share.js"></script>
+    <script src="./js/swiper-sobre.js"></script>
+    <!-- <script src="./js/swiper-index.js"></script> -->
     <script src="./js/script.js"></script>
 </body>
 </html>
