@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo-sm-white.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-sm-white.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -70,32 +71,51 @@
         <div id="stars3"></div>
     </div>
 
-<!--================================ ELENCO ================================--> 
+<!--================================ PREMIOS ================================--> 
     <main>
 
         <section class="container-fluid">
+            <hr>
+            <div class="container titulo">
+                <p id="premios" class="titulotxt">Prêmios<p>
+            </div>
             <!-- Swiper -->
-            <div class="swiper-container p-0 mt-4 ">
+            <div class="swiper-container-premios p-0 mt-4 ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide img-fluid">
-                        <a href="#turne">
-                            <img src="./assets/bg-elenco-1-txt.png">
+                        <a href="#premios">
+                            <img src="./assets/premios/premio-5.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide img-fluid">
+                        <a href="#premios">
+                            <img src="./assets/premios/premio-4.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide img-fluid">
+                        <a href="#premios">
+                            <img src="./assets/premios/premio-3.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide img-fluid">
+                        <a href="#premios">
+                            <div class="titulo w-100">
+                                <p class="titulotxt">Prêmio 2018</p>
+                            </div>
+                            <img src="./assets/premios/premio-2.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide img-fluid">
+                        <a href="#premios">
+                            <img src="./assets/premios/premio-1.png">
                         </a>
                     </div>
                     <div class="swiper-slide img-fluid">
                         <a href="ingressos.html">
-                            <div class="titulo">
+                            <div class="titulo w-100">
                                 <p class="titulotxt">Garanta seu Ingresso</p>
                             </div>
                             <img src="./assets/ingressos.png">
-                        </a>
-                    </div>
-                    <div class="swiper-slide img-fluid">
-                        <a href="#elenco">
-                            <div class="titulo">
-                                <p class="titulotxt">Conheça A Companhia</p>
-                            </div>
-                            <img src="./assets/teatro-1.png">
                         </a>
                     </div>
                 </div>
@@ -111,8 +131,40 @@
         <div class="container">
             <hr>
             <div class="container titulo">
-                <p id="turne" class="titulotxt"><span class="typing2"></span> Anteriores<p>
+                <p id="turne" class="titulotxt">Nossas <span class="typing2"></span><p>
             </div>
+<!--====================================== SHARE BUTTONS ======================================-->
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <div class="mn-social-bottom-c row p-1">
+                        <a target="_blank" class="mn-social-bottom">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a target="_blank" class="mn-social-bottom">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a target="_blank" class="mn-social-bottom">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a target="_blank" class="mn-social-bottom">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <!-- <a class="mn-social-bottom" onclick="$('#mn-social-bottom-hidden').slideToggle();$('.fa-plus').toggleClass('mn-social-r')">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <div id="mn-social-bottom-hidden">
+                            <a target="_blank" class="mn-social-bottom">
+                            <i class="fa fa-reddit"></i>
+                            </a>
+                            <a target="_blank" class="mn-social-bottom">
+                            <i class="fa fa-pinterest-p"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <p class="p-0 m-0 text-light">Compartilhe</p>
+                </div>
+            </div>
+<!--====================================== END SHARE BUTTONS ======================================-->
             <div class="row p-3">
                 <div class="col-sm-6 pb-2">
                     <div class="card overflow-hidden card-turne rounded-0">
@@ -341,8 +393,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap5/js/bootstrap.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/share.js"></script>
     <script src="./js/swiper-sobre.js"></script>
-    <script src="./js/swiper-index.js"></script>
+    <!-- <script src="./js/swiper-index.js"></script> -->
     <script src="./js/script.js"></script>
 </body>
 </html>

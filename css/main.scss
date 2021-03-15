@@ -212,6 +212,65 @@ section {
     }
   }
 }
+
+/*===================================== SHARE BUTTON =====================================*/
+.mn-social-bottom-c {
+  margin: auto;
+}
+.mn-social-bottom-c p {
+  text-align: center;
+  font-family: "Playball", cursive;
+  font-size: 25px;
+  color: #5a5a5a;
+}
+.mn-social-bottom {
+  background: #f5f5f5;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 5px;
+  color: #131212;
+  border-radius: 4px;
+  margin: 10px;
+  transition: all 0.3s;
+  font-size: 1.5em;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+
+  .fa,
+  .fab,
+  .fas {
+    font-size: 1.2em;
+    color: #000;
+  }
+  .fa-plus {
+    transition: -webkit-transform 0.3s;
+  }
+  .fa-plus.mn-social-r {
+    -webkit-transform: rotate(45deg);
+  }
+}
+.mn-social-bottom:hover {
+  color: #fff;
+  background: rgba(53, 53, 53, 0.6);
+  box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+  transform: scale(1.2);
+
+  .fa,
+  .fab,
+  .fas {
+    color: #fff;
+  }
+}
+#mn-social-bottom-hidden {
+  display: none;
+}
+
+/*===================================== SWIPER =====================================*/
+
+/*=========== SWIPER HOME ===========*/
 .swiper-container {
   width: 100%;
   height: 500px;
@@ -288,7 +347,62 @@ section {
     }
   }
 }
+/*=========== SWIPER SOBRE ===========*/
+.swiper-container-premios {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 2em;
+
+    .titulo {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 10px auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: #fff 1px solid;
+
+      .titulotxt {
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+        padding: 10px auto;
+        margin: 0;
+      }
+    }
+  }
+  .swiper-slide a {
+    height: 100%;
+    width: auto;
+  }
+  .swiper-slide img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+/*===================================== CARDS =====================================*/
 .card {
   background-color: #000;
   color: #fff;
@@ -404,10 +518,7 @@ form {
   }
 }
 
-.fa-paper-plane,
-.fa-times {
-  padding: 0 5px 0 0;
-}
+/* =============== Mapeamento Páginas NOTÍCIAS =============== */
 .linkmap {
   position: fixed;
   white-space: nowrap;
@@ -447,7 +558,7 @@ form {
   box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.59);
 }
 
-/*=================== ANIMATIONS ===================*/
+/*===================================== ANIMATIONS =====================================*/
 @keyframes slide-menu {
   from {
     transform: scaleX(0);
@@ -501,7 +612,9 @@ form {
   }
 }
 
-/*=================== RESPONSIVE ===================*/
+/*======================================================================================
+====================================== RESPONSIVE ======================================
+========================================================================================*/
 @media only screen and (max-width: 992px) {
   .card {
     background-color: #000;
@@ -534,7 +647,7 @@ form {
     }
   }
 }
-
+/*==========================================================================*/
 @media only screen and (min-width: 845px) {
   .menu-btn,
   .open-menu {
@@ -548,7 +661,7 @@ form {
     }
   }
 }
-
+/*==========================================================================*/
 @media only screen and (max-width: 845px) {
   .navoverlay {
     ul {
@@ -575,7 +688,7 @@ form {
     }
   }
 }
-
+/*==========================================================================*/
 @media only screen and (max-width: 650px) {
   .navoverlay {
     ul {
@@ -588,9 +701,42 @@ form {
       width: 80%;
     }
   }
-}
+  .swiper-container-premios {
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background: transparent;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 
-/*========= EM TESTE ========= */
+    .swiper-slide a {
+      width: auto;
+      height: 100%;
+
+      .swiper-slide img {
+        width: auto;
+        height: 100%;
+      }
+      .titulo {
+        display: none;
+      }
+    }
+  }
+}
+/*==========================================================================*/
 @media only screen and (max-width: 450px) {
   .navoverlay {
     height: 100vh;

@@ -1,7 +1,7 @@
-var swiper = new Swiper('.swiper-container-elenco', {
-    effect: 'slide',
+var swiper = new Swiper('.swiper-container-premios', {
+    effect: 'coverflow',
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 5,
     grabCursor: true,
     loop: true,
     centeredSlides: true,
@@ -10,7 +10,7 @@ var swiper = new Swiper('.swiper-container-elenco', {
         disableOnInteraction: false,
       },
       coverflowEffect: {
-        rotate: 80,
+        rotate: 70,
         stretch: 0,
         depth: 100,
         modifier: 1,
