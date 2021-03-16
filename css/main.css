@@ -340,7 +340,8 @@ header .menu-btn {
 /*=========== SWIPER HOME ===========*/
 .swiper-container {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  overflow: hidden;
 }
 
 .swiper-container .swiper-slide {
@@ -1573,6 +1574,14 @@ form .enviar {
     -ms-grid-columns: (50%)[2];
         grid-template-columns: repeat(2, 50%);
     width: 80%;
+  }
+  .swiper-container {
+    height: auto;
+    width: 100%;
+  }
+  .em-cartaz {
+    height: auto;
+    width: 100%;
   }
   .swiper-container-premios {
     overflow: hidden;
