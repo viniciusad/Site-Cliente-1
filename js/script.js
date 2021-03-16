@@ -44,14 +44,14 @@ function formEnviado() {
 
 
 /* ============================== ANIMAÇÃO DE DIGITAÇÃO ============================== */
-var typed = new Typed(".typing", {
+var typed1 = new Typed(".typing", {
   strings: ["Arte"],
   typeSpeed: 100,
   backSpeed: 100,
   loop: true
 })
 
-var typed = new Typed(".typing2", {
+var typed2 = new Typed(".typing2", {
   strings: ["Turnês"],
   typeSpeed: 100,
   backSpeed: 100,
