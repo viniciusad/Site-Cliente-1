@@ -1,119 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
     <title>Black Moon Theater</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo-sm-white.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-sm-white.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo-sm-white.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/logo-sm-white.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style-bg.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<!-- =============== BOTÃO VOLTAR PARA O TOPO DA PÁGINA =============== -->
-    <button onclick="topFunction()" id="back-top" title="Topo da página"><i class="fas fa-arrow-up"></i></button>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style-bg.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- =============== BOTÃO VOLTAR PARA O TOPO DA PÁGINA =============== -->
+    <button onclick="topFunction()" id="back-top" title="Topo da página">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-<!--====================================== MENU ESCONDIDO ======================================-->
+    <!--====================================== MENU ESCONDIDO ======================================-->
     <nav class="navoverlay" id="overlay">
-        <img src="./assets/close-menu-white.svg" class="close-btn" id="close-menu">
-        <ul class="">
-            <li class="">
-                <a class="text-left" href="index.html"><h2 class="underline">Início</h2>
-                <span>Página principal</span></a>
-            </li>
-            <li class="">
-                <a class="text-left" href="sobre.html"><h2 class="underline">Sobre</h2>
-                <span>A Companhia</span></a>
-            </li>
-            <li class="">
-                <a class="text-left" href="agenda.html"><h2 class="underline">Agenda</h2>
-                <span>Nossas Turnês</span></a>
-            </li>
-            <li class="">
-                <a class="text-left" href="noticias.html"><h2 class="underline">Notícias</h2>
-                <span>BMT na mídia</span></a>
-            </li>
-            <li class="">
-                <a class="text-left" href="contato.html"><h2 class="underline">Contato</h2>
-                <span>Entre em contato</span></a>
-            </li>
-            <li class="">
-                <a class="text-left" href="ingressos.html"><h2 class="underline">Ingressos</h2>
-                <span>Compre aqui</span></a>
-            </li>
-        </ul>
+      <img
+        src="./assets/close-menu-white.svg"
+        class="close-btn"
+        id="close-menu"
+      />
+      <ul class="">
+        <li class="">
+          <a class="text-left" href="index.html"
+            ><h2 class="underline">Início</h2>
+            <span>Página principal</span></a
+          >
+        </li>
+        <li class="">
+          <a class="text-left" href="sobre.html"
+            ><h2 class="underline">Sobre</h2>
+            <span>A Companhia</span></a
+          >
+        </li>
+        <li class="">
+          <a class="text-left" href="agenda.html"
+            ><h2 class="underline">Agenda</h2>
+            <span>Nossas Turnês</span></a
+          >
+        </li>
+        <li class="">
+          <a class="text-left" href="noticias.html"
+            ><h2 class="underline">Notícias</h2>
+            <span>BMT na mídia</span></a
+          >
+        </li>
+        <li class="">
+          <a class="text-left" href="contato.html"
+            ><h2 class="underline">Contato</h2>
+            <span>Entre em contato</span></a
+          >
+        </li>
+        <li class="">
+          <a class="text-left" href="ingressos.html"
+            ><h2 class="underline">Ingressos</h2>
+            <span>Compre aqui</span></a
+          >
+        </li>
+      </ul>
     </nav>
 
-<!--====================================== MENU WIDE TOPO ======================================-->
-    <header class="container-fluid sticky-top">
-        <div class="links">
-                <a href="index.html"><img src="./assets/logo-sm-white.png" class="logo"></a>
-            <div class="container float-right row-md-2">
-                <a href="index.html"><h2 class="links-top underline active">Início</h2></a>
-                <a href="sobre.html"><h2 class="links-top underline">Sobre</h2></a>
-                <a href="agenda.html"><h2 class="links-top underline">Agenda</h2></a>
-                <a href="noticias.html"><h2 class="links-top underline">Notícias</h2></a>
-                <a href="contato.html"><h2 class="links-top underline">Contato</h2></a>
-                <a href="ingressos.html"><h2 class="links-top underline">Ingressos</h2></a>
-            </div>
-            <img src="./assets/open-menu-white.svg" class="menu-btn float-right" id="open-menu">
+    <!--====================================== MENU WIDE TOPO ======================================-->
+    <header class="container-fluid">
+      <div class="links">
+        <a href="index.html"
+          ><img src="./assets/logo-sm-white.png" class="logo"
+        /></a>
+        <div class="container float-right row-md-2">
+          <a href="index.html"
+            ><h2 class="links-top underline active">Início</h2></a
+          >
+          <a href="sobre.html"><h2 class="links-top underline">Sobre</h2></a>
+          <a href="agenda.html"><h2 class="links-top underline">Agenda</h2></a>
+          <a href="noticias.html"
+            ><h2 class="links-top underline">Notícias</h2></a
+          >
+          <a href="contato.html"
+            ><h2 class="links-top underline">Contato</h2></a
+          >
+          <a href="ingressos.html"
+            ><h2 class="links-top underline">Ingressos</h2></a
+          >
         </div>
+        <img
+          src="./assets/open-menu-white.svg"
+          class="menu-btn float-right"
+          id="open-menu"
+        />
+      </div>
     </header>
 
-<!--====================================== ESTRELAS BACKGROUND ======================================-->
+    <!--====================================== ESTRELAS BACKGROUND ======================================-->
     <div class="sky m-0">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </div>
 
-<!--====================================== CORPO DA PÁGINA ======================================-->
+    <!--====================================== CORPO DA PÁGINA ======================================-->
     <main>
-
-        <section class="container-fluid">
-            <!-- Swiper -->
-            <div class="swiper-container p-0 mt-4">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide img-fluid">
-                        <a href="sobre.html">
-                            <img src="./assets/bg-elenco-1-txt.png">
-                        </a>
-                    </div>
-                    <div class="swiper-slide img-fluid">
-                        <a href="ingressos.html">
-                            <img src="./assets/ingressos.png">
-                        </a>
-                    </div>
-                    <div class="swiper-slide img-fluid">
-                        <a href="noticias.html">
-                            <img src="./assets/noticias.png">
-                        </a>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-dots swiper-pagination"></div> -->
-                <!-- Add Arrows -->
-                <div class="swiper-arrow swiper-button-next"></div>
-                <div class="swiper-arrow swiper-button-prev"></div>
+      <section class="container-fluid">
+        <!-- Swiper -->
+        <div class="swiper-container p-0 mt-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide img-fluid">
+              <a href="sobre.html">
+                <img src="./assets/bg-elenco-1-txt.png" />
+              </a>
             </div>
-        </section>
-        
+            <div class="swiper-slide img-fluid">
+              <a href="ingressos.html">
+                <img src="./assets/ingressos.png" />
+              </a>
+            </div>
+            <div class="swiper-slide img-fluid">
+              <a href="noticias.html">
+                <img src="./assets/noticias.png" />
+              </a>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-dots swiper-pagination"></div> -->
+          <!-- Add Arrows -->
+          <div class="swiper-arrow swiper-button-next"></div>
+          <div class="swiper-arrow swiper-button-prev"></div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid p-0 em-cartaz">
+          <div class="col text-center p-3">
+            <div class="titulo">
+              <p class="titulotxt">Em cartaz:</p>
+            </div>
+          </div>
+          <img src="./assets/turne/em-cartaz-caros-ouvintes.jpg" />
+        </div>
+        <div class="titulo">
+          <p class="titulotxt">“Caros Ouvintes”</p>
+        </div>
 
+        <!--====================================== SHARE BUTTONS ======================================-->
+        <div class="d-flex justify-content-center">
+          <div class="mn-social-bottom-c row p-1">
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+            <!-- <a class="mn-social-bottom" onclick="$('#mn-social-bottom-hidden').slideToggle();$('.fa-plus').toggleClass('mn-social-r')">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                                <div id="mn-social-bottom-hidden">
+                                    <a target="_blank" class="mn-social-bottom">
+                                    <i class="fa fa-reddit"></i>
+                                    </a>
+                                    <a target="_blank" class="mn-social-bottom">
+                                    <i class="fa fa-pinterest-p"></i>
+                                    </a>
+                                </div> -->
+          </div>
+        </div>
+        <!--====================================== END SHARE BUTTONS ======================================-->
+      </section>
     </main>
 
-<!-- =============== SCRIPTS =============== -->
+    <!-- =============== SCRIPTS =============== -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap5/js/bootstrap.min.js"></script>
     <script src="./js/swiper-index.js"></script>
+    <script src="./js/modal-sobre.js"></script>
     <script src="./js/script.js"></script>
-    
-</body>
+  </body>
 </html>

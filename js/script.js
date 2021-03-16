@@ -59,6 +59,15 @@ var typed = new Typed(".typing2", {
 })
 
 
+/* ============================== HORIZONTAL SLIDER ============================== */
+// $('.hslider').click(function(){
+//   $('.hslider-container, .hslider-wrapper').animate({
+//       scrollLeft: $( $(this).attr('href') ).offset().left
+//   }, 1000);
+//   return true;
+// });
+
+
 /* ============================== navbar-toggler ============================== */
 // function openAndCloseNav() {
 //   var n = document.getElementById("open-menu");

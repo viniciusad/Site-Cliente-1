@@ -1,392 +1,599 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
-    <title>Black Moon Theater</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo-sm-white.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-sm-white.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <title>Conheça a Companhia BMT</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo-sm-white.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/logo-sm-white.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style-bg.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<!--====================================== MENU ESCONDIDO ======================================-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style-bg.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!--====================================== MENU ESCONDIDO ======================================-->
     <nav class="navoverlay" id="overlay">
-        <img src="./assets/close-menu-white.svg" class="close-btn" id="close-menu">
-        <ul class="">
-            <li class="text-left">
-                <a class="" href="index.html"><h2 class="underline">Início</h2>
-                <span>Página principal</span></a>
-            </li>
-            <li class="text-left">
-                <a class="" href="sobre.html"><h2 class="underline">Sobre</h2>
-                <span>A Companhia</span></a>
-            </li>
-            <li class="text-left">
-                <a class="" href="agenda.html"><h2 class="underline">Agenda</h2>
-                <span>Nossas Turnês</span></a>
-            </li>
-            <li class="text-left">
-                <a class="" href="noticias.html"><h2 class="underline">Notícias</h2>
-                <span>BMT na mídia</span></a>
-            </li>
-            <li class="text-left">
-                <a class="" href="contato.html"><h2 class="underline">Contato</h2>
-                <span>Entre em contato</span></a>
-            </li>
-            <li class="text-left">
-                <a class="" href="ingressos.html"><h2 class="underline">Ingressos</h2>
-                <span>Compre aqui</span></a>
-            </li>
-        </ul>
+      <img
+        src="./assets/close-menu-white.svg"
+        class="close-btn"
+        id="close-menu"
+      />
+      <ul class="">
+        <li class="text-left">
+          <a class="" href="index.html"
+            ><h2 class="underline">Início</h2>
+            <span>Página principal</span></a
+          >
+        </li>
+        <li class="text-left">
+          <a class="" href="sobre.html"
+            ><h2 class="underline">Sobre</h2>
+            <span>A Companhia</span></a
+          >
+        </li>
+        <li class="text-left">
+          <a class="" href="agenda.html"
+            ><h2 class="underline">Agenda</h2>
+            <span>Nossas Turnês</span></a
+          >
+        </li>
+        <li class="text-left">
+          <a class="" href="noticias.html"
+            ><h2 class="underline">Notícias</h2>
+            <span>BMT na mídia</span></a
+          >
+        </li>
+        <li class="text-left">
+          <a class="" href="contato.html"
+            ><h2 class="underline">Contato</h2>
+            <span>Entre em contato</span></a
+          >
+        </li>
+        <li class="text-left">
+          <a class="" href="ingressos.html"
+            ><h2 class="underline">Ingressos</h2>
+            <span>Compre aqui</span></a
+          >
+        </li>
+      </ul>
     </nav>
 
-<!--====================================== MENU WIDE TOPO ======================================-->
+    <!--====================================== MENU WIDE TOPO ======================================-->
     <header class="container-fluid">
-        <div class="links">
-                <a href="index.html"><img src="./assets/logo-sm-white.png" class="logo"></a>
-            <div class="container float-right row-md-2">
-                <a href="index.html"><h2 class="links-top underline">Início</h2></a>
-                <a href="sobre.html"><h2 class="links-top underline active">Sobre</h2></a>
-                <a href="agenda.html"><h2 class="links-top underline">Agenda</h2></a>
-                <a href="noticias.html"><h2 class="links-top underline">Notícias</h2></a>
-                <a href="contato.html"><h2 class="links-top underline">Contato</h2></a>
-                <a href="ingressos.html"><h2 class="links-top underline">Ingressos</h2></a>
-            </div>
-            <img src="./assets/open-menu-white.svg" class="menu-btn float-right" id="open-menu">
+      <div class="links">
+        <a href="index.html"
+          ><img src="./assets/logo-sm-white.png" class="logo"
+        /></a>
+        <div class="container float-right row-md-2">
+          <a href="index.html"><h2 class="links-top underline">Início</h2></a>
+          <a href="sobre.html"
+            ><h2 class="links-top underline active">Sobre</h2></a
+          >
+          <a href="agenda.html"><h2 class="links-top underline">Agenda</h2></a>
+          <a href="noticias.html"
+            ><h2 class="links-top underline">Notícias</h2></a
+          >
+          <a href="contato.html"
+            ><h2 class="links-top underline">Contato</h2></a
+          >
+          <a href="ingressos.html"
+            ><h2 class="links-top underline">Ingressos</h2></a
+          >
         </div>
+        <img
+          src="./assets/open-menu-white.svg"
+          class="menu-btn float-right"
+          id="open-menu"
+        />
+      </div>
     </header>
 
-<!--====================================== ESTRELAS BACKGROUND ======================================-->
+    <!--====================================== ESTRELAS BACKGROUND ======================================-->
     <div class="sky m-0">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </div>
 
-<!--================================ PREMIOS ================================--> 
+    <!--================================ PREMIOS ================================-->
     <main>
+    <section>
+      <div class="container">
+        <div class="container titulo">
+          <p id="turne" class="titulotxt">
+            <span class="typing2"></span>
+          </p>
+          <p></p>
+        </div>
 
-        <section class="container-fluid">
-            <hr>
-            <div class="container titulo">
-                <p id="premios" class="titulotxt">Prêmios<p>
-            </div>
-            <!-- Swiper -->
-            <div class="swiper-container-premios p-0 mt-4 ">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide img-fluid">
-                        <a href="#premios">
-                            <img src="./assets/premios/premio-5.png">
-                        </a>
-                    </div>
-                    <div class="swiper-slide img-fluid">
-                        <a href="#premios">
-                            <img src="./assets/premios/premio-4.png">
-                        </a>
-                    </div>
-                    <div class="swiper-slide img-fluid">
-                        <a href="#premios">
-                            <img src="./assets/premios/premio-3.png">
-                        </a>
-                    </div>
-                    <div class="swiper-slide img-fluid">
-                        <a href="#premios">
-                            <div class="titulo w-100">
-                                <p class="titulotxt">Prêmio 2018</p>
-                            </div>
-                            <img src="./assets/premios/premio-2.png">
-                        </a>
-                    </div>
-                    <div class="swiper-slide img-fluid">
-                        <a href="#premios">
-                            <img src="./assets/premios/premio-1.png">
-                        </a>
-                    </div>
-                    <div class="swiper-slide img-fluid">
-                        <a href="ingressos.html">
-                            <div class="titulo w-100">
-                                <p class="titulotxt">Garanta seu Ingresso</p>
-                            </div>
-                            <img src="./assets/ingressos.png">
-                        </a>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-dots swiper-pagination"></div> -->
-                <!-- Add Arrows -->
-                <div class="swiper-arrow swiper-button-next"></div>
-                <div class="swiper-arrow swiper-button-prev"></div>
-            </div>
-        </section>
-
-
-        <div class="container">
-            <hr>
-            <div class="container titulo">
-                <p id="turne" class="titulotxt">Nossas <span class="typing2"></span><p>
-            </div>
-<!--====================================== SHARE BUTTONS ======================================-->
-            <div class="d-flex justify-content-center">
-                <div class="text-center">
-                    <div class="mn-social-bottom-c row p-1">
+        <!--====================================== SHARE BUTTONS ======================================-->
+        <div class="d-flex justify-content-center">
+          <div class="mn-social-bottom-c row p-1">
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a target="_blank" class="mn-social-bottom">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+            <!-- <a class="mn-social-bottom" onclick="$('#mn-social-bottom-hidden').slideToggle();$('.fa-plus').toggleClass('mn-social-r')">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                    <div id="mn-social-bottom-hidden">
                         <a target="_blank" class="mn-social-bottom">
-                            <i class="fa fa-facebook"></i>
+                        <i class="fa fa-reddit"></i>
                         </a>
                         <a target="_blank" class="mn-social-bottom">
-                            <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest-p"></i>
                         </a>
-                        <a target="_blank" class="mn-social-bottom">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a target="_blank" class="mn-social-bottom">
-                            <i class="fa fa-envelope"></i>
-                        </a>
-                        <!-- <a class="mn-social-bottom" onclick="$('#mn-social-bottom-hidden').slideToggle();$('.fa-plus').toggleClass('mn-social-r')">
-                            <i class="fa fa-plus"></i>
-                        </a>
-                        <div id="mn-social-bottom-hidden">
-                            <a target="_blank" class="mn-social-bottom">
-                            <i class="fa fa-reddit"></i>
-                            </a>
-                            <a target="_blank" class="mn-social-bottom">
-                            <i class="fa fa-pinterest-p"></i>
-                            </a>
-                        </div> -->
-                    </div>
-                    <p class="p-0 m-0 text-light">Compartilhe</p>
+                    </div> -->
+          </div>
+        </div>
+        <!--====================================== END SHARE BUTTONS ======================================-->
+        <div class="row p-3">
+          <div class="col-sm-6 pb-2">
+            <div class="card overflow-hidden card-turne rounded-0">
+              <div class="card-body row p-0">
+                <h3 class="card-title text-center p-2">Chaplin: A História</h3>
+                <div class="col-sm-6 turne">
+                  <p class="card-text p-2">
+                    Sir Charles Spencer Chaplin KBE (Inglaterra, 16 de abril de
+                    1889 — Corsier-sur-Vevey, 25 de dezembro de 1977) foi um
+                    ator, comediante, diretor, compositor, roteirista, cineasta,
+                    editor e músico britânico. Chaplin foi um dos atores da era
+                    do cinema mudo, notabilizado pelo uso de mímica e da comédia
+                    pastelão.
+                  </p>
                 </div>
-            </div>
-<!--====================================== END SHARE BUTTONS ======================================-->
-            <div class="row p-3">
-                <div class="col-sm-6 pb-2">
-                    <div class="card overflow-hidden card-turne rounded-0">
-                        <div class="card-body row p-0">
-                            <h3 class="card-title text-center p-2">Chaplin: A História</h3>
-                            <div class="col-sm-6 turne">
-                                <p class="card-text p-2">
-                                    Sir Charles Spencer Chaplin KBE (Inglaterra, 16 de abril de 1889 — Corsier-sur-Vevey, 25 de dezembro de 1977) foi um ator, comediante, diretor, compositor, roteirista, cineasta, editor e músico britânico. Chaplin foi um dos atores da era do cinema mudo, notabilizado pelo uso de mímica e da comédia pastelão.
-                                </p>
-                            </div>
-                            <div class="col-sm-6 img-turne-container">
-                                <div class="card-title bg-transparent text-center p-0">
-                                    <!--================= Abrir Modal =================-->
-                                    <button id="myBtn1" class="btn btn-danger btn-outline-light w-100 rounded-0">Assistir trecho da peça</button>
-    
-                                    <!--================= Conteúdo do Modal =================-->
-                                    <div id="myModal1" class="modal1">
-                                        <div class="modal-content1">
-                                            <div class="align-content-center">
-                                                <span class="close1 p-4">Fechar</span>
-                                            </div>
-                                            <iframe src="https://www.youtube.com/embed/EIOVo6DrBMQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <a class="img-fluid img-turne p-0">
-                                        <img src="./assets/turne/charlie-chaplin.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 pb-2">
-                    <div class="card overflow-hidden card-turne rounded-0">
-                        <div class="card-body row p-0">
-                            <h3 class="card-title text-center p-2">Frida!</h3>
-                            <div class="col-sm-6 turne">
-                                <p class="card-text p-2">
-                                    Magdalena Carmen Frida Kahlo Calderón, mundialmente conhecida como Frida Kahlo, nasceu em 6 de julho de 1907, em Coyoacán, no México. Com uma vida marcada por paixões, dor, sofrimento e perseverança, Frida Kahlo levou ao mundo as cores vibrantes e a energia do povo mexicano em suas roupas, adereços e pinturas.
-                                </p>
-                            </div>
-                            <div class="col-sm-6 img-turne-container">
-                                <div class="card-footer bg-transparent text-center p-0">
-                                    <!--================= Abrir Modal =================-->
-                                    <button id="myBtn2" class="btn btn-danger btn-outline-light w-100 rounded-0">Assistir trecho da peça</button>
-    
-                                    <!--================= Conteúdo do Modal =================-->
-                                    <div id="myModal2" class="modal2">
-                                        <div class="modal-content2">
-                                            <div class="align-content-center">
-                                                <span class="close2 p-2">Fechar</span>
-                                            </div>
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eWWJ73zHuEI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a id="myBtn2" class="img-fluid img-turne p-0">
-                                    <img src="./assets/turne/frida-kahlo.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="col-sm-6 img-turne-container">
+                  <div class="card-title bg-transparent text-center p-0">
+                    <!--================= Abrir Modal =================-->
+                    <button
+                      id="myBtn1"
+                      class="btn btn-danger btn-outline-light w-100 rounded-0"
+                    >
+                      Assistir trecho da peça
+                    </button>
 
-              <div class="row p-3">
-                <div class="col-sm-6 pb-2">
-                    <div class="card overflow-hidden card-turne rounded-0">
-                        <div class="card-body row p-0">
-                            <h3 class="card-title text-center p-2">Dalí e A Arte</h3>
-                            <div class="col-sm-6 turne">
-                                <p class="card-text p-2">
-                                    Salvador Dalí i Domènech foi um importante pintor espanhol, conhecido pelo seu trabalho surrealista. O trabalho de Dalí chama a atenção pela incrível combinação de imagens bizarras, oníricas, com excelente qualidade plástica. Salvador Dalí teve também trabalhos artísticos no cinema, escultura, e fotografia colaboranto até com Walt Disney no curta de animação "Destino".
-                                </p>
-                            </div>
-                            <div class="col-sm-6 img-turne-container">
-                                <div class="card-footer bg-transparent text-center p-0">
-                                    <!--================= Abrir Modal =================-->
-                                    <button id="myBtn3" class="btn btn-danger btn-outline-light w-100 rounded-0">Assistir trecho da peça</button>
-    
-                                    <!--================= Conteúdo do Modal =================-->
-                                    <div id="myModal3" class="modal3">
-                                        <div class="modal-content3">
-                                            <div class="align-content-center">
-                                                <span class="close3 p-2">Fechar</span>
-                                            </div>
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TA7esbxbuLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a id="myBtn3" class="img-fluid img-turne p-0">
-                                    <img src="./assets/turne/dali.jpg">
-                                </a>
-                            </div>
+                    <!--================= Conteúdo do Modal =================-->
+                    <div id="myModal1" class="modal1">
+                      <div class="modal-content1">
+                        <div class="align-content-center">
+                          <span class="close1 p-4">Fechar</span>
                         </div>
+                        <iframe
+                          src="https://www.youtube.com/embed/EIOVo6DrBMQ"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
                     </div>
-                </div>
-                <div class="col-sm-6 pb-2">
-                    <div class="card overflow-hidden card-turne rounded-0">
-                        <div class="card-body row p-0">
-                            <h3 class="card-title text-center p-2">Marilyn Monroe</h3>
-                            <div class="col-sm-6 turne">
-                                <p class="card-text p-2">
-                                    Em junho de 1946, levada por Emmeline Snively, diretor da agência Blue Book Model, Marilyn assinou um contrato com a agência de atrizes.
-                                    Sua estreia no cinema foi em um pequeno papel no filme “Sua Alteza, a Secretária” (1947). No ano seguinte assinou com a Colúmbia Pictures, onde permaneceu por seis meses.
-                                </p>
-                            </div>
-                            <div class="col-sm-6 img-turne-container">
-                                <div class="card-footer bg-transparent text-center p-0">
-                                    <!--================= Abrir Modal =================-->
-                                    <button id="myBtn4" class="btn btn-danger btn-outline-light w-100 rounded-0">Assistir trecho da peça</button>
-    
-                                    <!--================= Conteúdo do Modal =================-->
-                                    <div id="myModal4" class="modal4">
-                                        <div class="modal-content4">
-                                            <div class="align-content-center">
-                                                <span class="close4 p-2">Fechar</span>
-                                            </div>
-                                            <iframe src="https://www.youtube.com/embed/EIOVo6DrBMQ?autoplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a id="myBtn4" class="img-fluid img-turne p-0">
-                                    <img src="./assets/turne/marilyn-monroe.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <a class="img-fluid img-turne p-0">
+                      <img src="./assets/turne/charlie-chaplin.jpg" />
+                    </a>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-sm-6 pb-2">
+            <div class="card overflow-hidden card-turne rounded-0">
+              <div class="card-body row p-0">
+                <h3 class="card-title text-center p-2">Frida!</h3>
+                <div class="col-sm-6 turne">
+                  <p class="card-text p-2">
+                    Magdalena Carmen Frida Kahlo Calderón, mundialmente
+                    conhecida como Frida Kahlo, nasceu em 6 de julho de 1907, em
+                    Coyoacán, no México. Com uma vida marcada por paixões, dor,
+                    sofrimento e perseverança, Frida Kahlo levou ao mundo as
+                    cores vibrantes e a energia do povo mexicano em suas roupas,
+                    adereços e pinturas.
+                  </p>
+                </div>
+                <div class="col-sm-6 img-turne-container">
+                  <div class="card-footer bg-transparent text-center p-0">
+                    <!--================= Abrir Modal =================-->
+                    <button
+                      id="myBtn2"
+                      class="btn btn-danger btn-outline-light w-100 rounded-0"
+                    >
+                      Assistir trecho da peça
+                    </button>
 
-
-            <hr>
-            <div class="container titulo">
-                <p id="elenco" class="titulotxt">Quem faz a <span class="typing"></span><p>
+                    <!--================= Conteúdo do Modal =================-->
+                    <div id="myModal2" class="modal2">
+                      <div class="modal-content2">
+                        <div class="align-content-center">
+                          <span class="close2 p-2">Fechar</span>
+                        </div>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/eWWJ73zHuEI"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <a id="myBtn2" class="img-fluid img-turne p-0">
+                    <img src="./assets/turne/frida-kahlo.jpg" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
-                <div class="col mb-5">
-                    <div class="grow card h-100 p-3">
-                        <img src="./assets/elenco/elenco-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Adrien Legrand</h5>
-                        <p class="card-text">Atuou em Alice Através do Espelho, A Caminho de Casa, Toda Nudez será Castigada, Mãe Coragem e seus Filhos e Hamlet. Fora da companhia, atuou também em A Visita da Velha Senhora, com direção de Moacyr Góes, O Ateliê Voador, com direção de Thomas Quillardet, Ana e o Tenente, com direção de Joelson Medeiros, além de Vestido de Noiva e Histórias de Jilú, ambas com direção de Renato Carrera. Dirigiu o infantil Homem de Aço, de Laura Castro, além das formaturas da Escola Angel Vianna, Retratos Invertidos e Casa dos Ventos.</p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-muted">Integrante desde 2004</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="grow card h-100 p-3">
-                        <img src="./assets/elenco/elenco-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Inès Deforest</h5>
-                        <p class="card-text">Tendo o teatro de rua como base da sua formação, participou em múltiplas funções de trabalhos com perfis diversos no teatro e cinema. Por cinco anos atuou no Grupo DeClamar, que tinha como objetivo resgatar os antigos saraus de poesia e contação de histórias. Como ator, nesta primeira fase, destacam-se o solo Anne Frank e os espetáculos O Leão no Inverno e Pela Noite. 
-                        Seu primeiro trabalho na companhia foi A Caminho de Casa e, de lá pra cá, atuou na grande maioria dos espetáculos do grupo: Toda Nudez Será Castigada, Alice Através do Espelho, Mãe Coragem e Seus Filhos, Pessoas Invisíveis, Inveja dos Anjos, Antes da Coisa Toda Começar, O Dia em Que Sam Morreu, etc.
-                        </p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-muted">Integrante desde 2010</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="grow card h-100 p-3">
-                        <img src="./assets/elenco/elenco-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Edwige Fay</h5>
-                        <p class="card-text">Recebeu o Prêmio Mambembe de Melhor Atriz (1994), por sua atuação em A Ratoeira é o Gato, o Prêmio Shell (2008), por Inveja dos Anjos e o Prêmio Cenym (2017), por Hamlet. Também foi indicada ao Prêmio Molière de Melhor Atriz (1994), por sua atuação em A Ratoeira é o Gato, ao Prêmio Mambembe (1997), por Sob o Sol em Meu Leito após a Água, ao Prêmio Cultura Inglesa (1999), por Alice através do Espelho, ao Prêmio Qualidade Brasil (2004), por A Caminho de Casa, ao Prêmio Shell (2005), por Toda Nudez será Castigada, ao Prêmio APTR (2007), por Mãe Coragem e seus Filhos, ao Prêmio APTR (2008), por Inveja dos Anjos e ao Prêmio Shell (2012), por A Marca da Água. Em 2020, recebeu o Prêmio APTR de Melhor Atriz Coadjuvante, por sua participação em Angels in America.</p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-muted">Integrante desde 2004</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col mb-5">
-                    <div class="grow card h-100 p-3">
-                        <img src="./assets/elenco/elenco-4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">James Deniaud</h5>
-                        <p class="card-text">Estudou na CAL (Casa das Artes de Laranjeiras), e integra a Armazém Companhia de Teatro desde 2012, atuando nos espetáculos Alice Através do Espelho, A Marca da Água, Toda Nudez Será Castigada, O Dia em que Sam Morreu, Inútil a Chuva, Hamlet e Angels in America. Trabalhou com outros diretores como César Augusto, Ivan Sugahara, Victor Garcia Peralta, Miguel Falabella e Enrique Diaz.
-                        No cinema protagonizou o filme Historias Que Só Existem Quando Lembradas, de Julia Murat, com o qual concorreu à categoria de melhor atriz no Festival do Rio; atuou em Bonitinha, Mas Ordinária, direção de Moacyr Góes, Nosso Lar, direção de Wagner Assis, Mãe de Adriana Vasconcellos, entre outros.</p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-muted">Integrante desde 2007</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="grow card h-100 p-3">
-                        <img src="./assets/elenco/elenco-5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Godefrey Petit</h5>
-                        <p class="card-text">Desde o início de sua trajetória artística desenvolveu pesquisas sobre o palhaço, além de dirigir espetáculos de palhaço, como Circo de palhaços do Picolino e A metamorfose, com o grupo Circo de Palhaços do Picolino e Um dia qualquer. Participou do projeto Plantão Sorriso e coordenou e dirigiu Consultório de Palhaços, em Natal, realizando intervenções em hospitais.</p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-muted">Integrante desde 2007</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="grow card h-100 p-3">
-                        <img src="./assets/elenco/elenco-6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Urbain Monette</h5>
-                        <p class="card-text">Como ator da companhia, participou da remontagem de Alice Através do Espelho, no papel do Gato Que Ri, em Hamlet, interpretando Lartes, Guildenstern e o Ator, além do profeta de um novo tempo Prior Walter, em Angels in America. Em parceria com Paulo de Moraes, assinou a dramaturgia do espetáculo Inútil A Chuva.</p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-muted">Integrante desde 2004</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="row p-3">
+          <div class="col-sm-6 pb-2">
+            <div class="card overflow-hidden card-turne rounded-0">
+              <div class="card-body row p-0">
+                <h3 class="card-title text-center p-2">Dalí e A Arte</h3>
+                <div class="col-sm-6 turne">
+                  <p class="card-text p-2">
+                    Salvador Dalí i Domènech foi um importante pintor espanhol,
+                    conhecido pelo seu trabalho surrealista. O trabalho de Dalí
+                    chama a atenção pela incrível combinação de imagens
+                    bizarras, oníricas, com excelente qualidade plástica.
+                    Salvador Dalí teve também trabalhos artísticos no cinema,
+                    escultura, e fotografia colaboranto até com Walt Disney no
+                    curta de animação "Destino".
+                  </p>
+                </div>
+                <div class="col-sm-6 img-turne-container">
+                  <div class="card-footer bg-transparent text-center p-0">
+                    <!--================= Abrir Modal =================-->
+                    <button
+                      id="myBtn3"
+                      class="btn btn-danger btn-outline-light w-100 rounded-0"
+                    >
+                      Assistir trecho da peça
+                    </button>
+
+                    <!--================= Conteúdo do Modal =================-->
+                    <div id="myModal3" class="modal3">
+                      <div class="modal-content3">
+                        <div class="align-content-center">
+                          <span class="close3 p-2">Fechar</span>
+                        </div>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/TA7esbxbuLI"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <a id="myBtn3" class="img-fluid img-turne p-0">
+                    <img src="./assets/turne/dali.jpg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 pb-2">
+            <div class="card overflow-hidden card-turne rounded-0">
+              <div class="card-body row p-0">
+                <h3 class="card-title text-center p-2">Marilyn Monroe</h3>
+                <div class="col-sm-6 turne">
+                  <p class="card-text p-2">
+                    Em junho de 1946, levada por Emmeline Snively, diretor da
+                    agência Blue Book Model, Marilyn assinou um contrato com a
+                    agência de atrizes. Sua estreia no cinema foi em um pequeno
+                    papel no filme “Sua Alteza, a Secretária” (1947). No ano
+                    seguinte assinou com a Colúmbia Pictures, onde permaneceu
+                    por seis meses.
+                  </p>
+                </div>
+                <div class="col-sm-6 img-turne-container">
+                  <div class="card-footer bg-transparent text-center p-0">
+                    <!--================= Abrir Modal =================-->
+                    <button
+                      id="myBtn4"
+                      class="btn btn-danger btn-outline-light w-100 rounded-0"
+                    >
+                      Assistir trecho da peça
+                    </button>
+
+                    <!--================= Conteúdo do Modal =================-->
+                    <div id="myModal4" class="modal4">
+                      <div class="modal-content4">
+                        <div class="align-content-center">
+                          <span class="close4 p-2">Fechar</span>
+                        </div>
+                        <iframe
+                          src="https://www.youtube.com/embed/EIOVo6DrBMQ?autoplay"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <a id="myBtn4" class="img-fluid img-turne p-0">
+                    <img src="./assets/turne/marilyn-monroe.jpg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section class="container-fluid">
+            <hr />
+            <div class="container titulo">
+              <p id="premios" class="titulotxt">Prêmios</p>
+              <p></p>
+            </div>
+    
+            <!-- Swiper -->
+            <div class="swiper-container-premios p-0 mt-4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide img-fluid">
+                  <a href="#premios">
+                    <img src="./assets/premios/premio-5.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide img-fluid">
+                  <a href="#premios">
+                    <img src="./assets/premios/premio-4.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide img-fluid">
+                  <a href="#premios">
+                    <img src="./assets/premios/premio-3.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide img-fluid">
+                  <a href="#premios">
+                    <div class="titulo w-100">
+                      <p class="titulotxt">Prêmio 2018</p>
+                    </div>
+                    <img src="./assets/premios/premio-2.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide img-fluid">
+                  <a href="#premios">
+                    <img src="./assets/premios/premio-1.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide img-fluid">
+                  <a href="ingressos.html">
+                    <div class="titulo w-100">
+                      <p class="titulotxt">Garanta seu Ingresso</p>
+                    </div>
+                    <img src="./assets/ingressos.png" />
+                  </a>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <!-- <div class="swiper-dots swiper-pagination"></div> -->
+              <!-- Add Arrows -->
+              <div class="swiper-arrow swiper-button-next"></div>
+              <div class="swiper-arrow swiper-button-prev"></div>
+            </div>
+          </section>
+
+        <hr />
+        <div class="container titulo">
+          <p id="elenco" class="titulotxt">
+            Quem faz a <span class="typing"></span>
+          </p>
+          <p></p>
+        </div>
+        <div class="container-fluid overflow-hidden">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+          <div class="col mb-5">
+            <div class="grow card h-100 p-3">
+              <img
+                src="./assets/elenco/elenco-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adrien Legrand</h5>
+                <p class="card-text">
+                  Atuou em Alice Através do Espelho, A Caminho de Casa, Toda
+                  Nudez será Castigada, Mãe Coragem e seus Filhos e Hamlet. Fora
+                  da companhia, atuou também em A Visita da Velha Senhora, com
+                  direção de Moacyr Góes, O Ateliê Voador, com direção de Thomas
+                  Quillardet, Ana e o Tenente, com direção de Joelson Medeiros,
+                  além de Vestido de Noiva e Histórias de Jilú, ambas com
+                  direção de Renato Carrera. Dirigiu o infantil Homem de Aço, de
+                  Laura Castro, além das formaturas da Escola Angel Vianna,
+                  Retratos Invertidos e Casa dos Ventos.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Integrante desde 2004</small>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="grow card h-100 p-3">
+              <img
+                src="./assets/elenco/elenco-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Inès Deforest</h5>
+                <p class="card-text">
+                  Tendo o teatro de rua como base da sua formação, participou em
+                  múltiplas funções de trabalhos com perfis diversos no teatro e
+                  cinema. Por cinco anos atuou no Grupo DeClamar, que tinha como
+                  objetivo resgatar os antigos saraus de poesia e contação de
+                  histórias. Como ator, nesta primeira fase, destacam-se o solo
+                  Anne Frank e os espetáculos O Leão no Inverno e Pela Noite.
+                  Seu primeiro trabalho na companhia foi A Caminho de Casa e, de
+                  lá pra cá, atuou na grande maioria dos espetáculos do grupo:
+                  Toda Nudez Será Castigada, Alice Através do Espelho, Mãe
+                  Coragem e Seus Filhos, Pessoas Invisíveis, Inveja dos Anjos,
+                  Antes da Coisa Toda Começar, O Dia em Que Sam Morreu, etc.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Integrante desde 2010</small>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="grow card h-100 p-3">
+              <img
+                src="./assets/elenco/elenco-3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Edwige Fay</h5>
+                <p class="card-text">
+                  Recebeu o Prêmio Mambembe de Melhor Atriz (1994), por sua
+                  atuação em A Ratoeira é o Gato, o Prêmio Shell (2008), por
+                  Inveja dos Anjos e o Prêmio Cenym (2017), por Hamlet. Também
+                  foi indicada ao Prêmio Molière de Melhor Atriz (1994), por sua
+                  atuação em A Ratoeira é o Gato, ao Prêmio Mambembe (1997), por
+                  Sob o Sol em Meu Leito após a Água, ao Prêmio Cultura Inglesa
+                  (1999), por Alice através do Espelho, ao Prêmio Qualidade
+                  Brasil (2004), por A Caminho de Casa, ao Prêmio Shell (2005),
+                  por Toda Nudez será Castigada, ao Prêmio APTR (2007), por Mãe
+                  Coragem e seus Filhos, ao Prêmio APTR (2008), por Inveja dos
+                  Anjos e ao Prêmio Shell (2012), por A Marca da Água. Em 2020,
+                  recebeu o Prêmio APTR de Melhor Atriz Coadjuvante, por sua
+                  participação em Angels in America.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Integrante desde 2004</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col mb-5">
+            <div class="grow card h-100 p-3">
+              <img
+                src="./assets/elenco/elenco-4.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">James Deniaud</h5>
+                <p class="card-text">
+                  Estudou na CAL (Casa das Artes de Laranjeiras), e integra a
+                  Armazém Companhia de Teatro desde 2012, atuando nos
+                  espetáculos Alice Através do Espelho, A Marca da Água, Toda
+                  Nudez Será Castigada, O Dia em que Sam Morreu, Inútil a Chuva,
+                  Hamlet e Angels in America. Trabalhou com outros diretores
+                  como César Augusto, Ivan Sugahara, Victor Garcia Peralta,
+                  Miguel Falabella e Enrique Diaz. No cinema protagonizou o
+                  filme Historias Que Só Existem Quando Lembradas, de Julia
+                  Murat, com o qual concorreu à categoria de melhor atriz no
+                  Festival do Rio; atuou em Bonitinha, Mas Ordinária, direção de
+                  Moacyr Góes, Nosso Lar, direção de Wagner Assis, Mãe de
+                  Adriana Vasconcellos, entre outros.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Integrante desde 2007</small>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="grow card h-100 p-3">
+              <img
+                src="./assets/elenco/elenco-5.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Godefrey Petit</h5>
+                <p class="card-text">
+                  Desde o início de sua trajetória artística desenvolveu
+                  pesquisas sobre o palhaço, além de dirigir espetáculos de
+                  palhaço, como Circo de palhaços do Picolino e A metamorfose,
+                  com o grupo Circo de Palhaços do Picolino e Um dia qualquer.
+                  Participou do projeto Plantão Sorriso e coordenou e dirigiu
+                  Consultório de Palhaços, em Natal, realizando intervenções em
+                  hospitais.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Integrante desde 2007</small>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="grow card h-100 p-3">
+              <img
+                src="./assets/elenco/elenco-6.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Urbain Monette</h5>
+                <p class="card-text">
+                  Como ator da companhia, participou da remontagem de Alice
+                  Através do Espelho, no papel do Gato Que Ri, em Hamlet,
+                  interpretando Lartes, Guildenstern e o Ator, além do profeta
+                  de um novo tempo Prior Walter, em Angels in America. Em
+                  parceria com Paulo de Moraes, assinou a dramaturgia do
+                  espetáculo Inútil A Chuva.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Integrante desde 2004</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </main>
 
-<!-- =============== BOTÃO VOLTAR PARA O TOPO DA PÁGINA =============== -->
-<button onclick="topFunction()" id="back-top" title="Início da página"><i class="fas fa-arrow-up"></i></button>
+    <!-- =============== BOTÃO VOLTAR PARA O TOPO DA PÁGINA =============== -->
+    <button onclick="topFunction()" id="back-top" title="Início da página">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-<!-- =============== SCRIPTS =============== -->
+    <!-- =============== SCRIPTS =============== -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -396,5 +603,5 @@
     <script src="./js/share.js"></script>
     <script src="./js/swiper-sobre.js"></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>

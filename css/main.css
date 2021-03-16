@@ -22,6 +22,55 @@ html hr {
           box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
 }
 
+body main,
+html main {
+  padding-top: 4em;
+}
+
+body section,
+html section {
+  padding-top: 2em;
+}
+
+body section h1,
+html section h1 {
+  font-size: 3em;
+  color: #fff;
+  width: 70%;
+}
+
+body section h1::before,
+html section h1::before {
+  content: " ";
+  border-top: 5px solid rgba(153, 153, 153, 0.5);
+  display: block;
+}
+
+.titulo {
+  max-width: 50%;
+  height: auto;
+  margin: 10px auto;
+  background-color: rgba(114, 114, 114, 0.1);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titulo .titulotxt {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px auto;
+  margin: 0;
+}
+
 header .links {
   list-style: none;
   display: -webkit-box;
@@ -219,47 +268,6 @@ header .menu-btn {
 .show-menu li:nth-of-type(7) {
   -webkit-animation: menu-item-anim 0.6s forwards 1.1s ease-in-out;
           animation: menu-item-anim 0.6s forwards 1.1s ease-in-out;
-}
-
-.titulo {
-  width: 50%;
-  height: auto;
-  margin: 10px auto;
-  background-color: rgba(114, 114, 114, 0.1);
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.titulo .titulotxt {
-  font-size: 2em;
-  font-weight: 700;
-  color: #fff;
-  padding: 10px auto;
-  margin: 0;
-}
-
-section {
-  padding-top: 5em;
-}
-
-section h1 {
-  font-size: 3em;
-  color: #fff;
-  width: 70%;
-}
-
-section h1::before {
-  content: " ";
-  border-top: 5px solid rgba(153, 153, 153, 0.5);
-  display: block;
 }
 
 /*===================================== SHARE BUTTON =====================================*/
@@ -1151,10 +1159,8 @@ section h1::before {
 .em-cartaz {
   width: 100%;
   height: 500px;
-  background-image: url(../assets/turne/em-cartaz-caros-ouvintes.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 0;
+  overflow: hidden;
 }
 
 .em-cartaz h3 {
@@ -1166,6 +1172,11 @@ section h1::before {
 .em-cartaz p {
   font-size: 1em;
   line-height: 1em;
+}
+
+.em-cartaz img {
+  width: 100%;
+  height: auto;
 }
 
 .botaoinfo {
@@ -1253,12 +1264,18 @@ section h1::before {
 .informacao {
   position: relative;
   text-align: left;
-  max-width: 40vw;
+  min-width: 40vw;
   max-height: 60vh;
   background-color: black;
   border: 1px #000 solid;
   padding: 10px;
   margin-top: 8%;
+}
+
+.service h3, .service p,
+.informacao h3,
+.informacao p {
+  width: 100%;
 }
 
 /*===================================== FORMULÁRIO =====================================*/
