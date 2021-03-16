@@ -269,7 +269,6 @@ section h1::before {
 
 .mn-social-bottom-c p {
   text-align: center;
-  font-family: "Playball", cursive;
   font-size: 25px;
   color: #5a5a5a;
 }
@@ -307,6 +306,7 @@ section h1::before {
 
 .mn-social-bottom .fa-plus.mn-social-r {
   -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .mn-social-bottom:hover {
@@ -510,7 +510,8 @@ section h1::before {
 .modal2,
 .modal3,
 .modal4,
-.modalinfo {
+.modalinfo,
+.modalingresso {
   display: none;
   position: fixed;
   z-index: 99;
@@ -528,26 +529,37 @@ section h1::before {
 .modal1 .modal-content3,
 .modal1 .modal-content4,
 .modal1 .modal-contentinfo,
+.modal1 .modal-contentingresso,
 .modal2 .modal-content1,
 .modal2 .modal-content2,
 .modal2 .modal-content3,
 .modal2 .modal-content4,
 .modal2 .modal-contentinfo,
+.modal2 .modal-contentingresso,
 .modal3 .modal-content1,
 .modal3 .modal-content2,
 .modal3 .modal-content3,
 .modal3 .modal-content4,
 .modal3 .modal-contentinfo,
+.modal3 .modal-contentingresso,
 .modal4 .modal-content1,
 .modal4 .modal-content2,
 .modal4 .modal-content3,
 .modal4 .modal-content4,
 .modal4 .modal-contentinfo,
+.modal4 .modal-contentingresso,
 .modalinfo .modal-content1,
 .modalinfo .modal-content2,
 .modalinfo .modal-content3,
 .modalinfo .modal-content4,
-.modalinfo .modal-contentinfo {
+.modalinfo .modal-contentinfo,
+.modalinfo .modal-contentingresso,
+.modalingresso .modal-content1,
+.modalingresso .modal-content2,
+.modalingresso .modal-content3,
+.modalingresso .modal-content4,
+.modalingresso .modal-contentinfo,
+.modalingresso .modal-contentingresso {
   background: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
           box-shadow: 5px 5px 20px -9px rgba(255, 255, 255, 0.59);
@@ -564,26 +576,37 @@ section h1::before {
 .modal1 .modal-content3 iframe,
 .modal1 .modal-content4 iframe,
 .modal1 .modal-contentinfo iframe,
+.modal1 .modal-contentingresso iframe,
 .modal2 .modal-content1 iframe,
 .modal2 .modal-content2 iframe,
 .modal2 .modal-content3 iframe,
 .modal2 .modal-content4 iframe,
 .modal2 .modal-contentinfo iframe,
+.modal2 .modal-contentingresso iframe,
 .modal3 .modal-content1 iframe,
 .modal3 .modal-content2 iframe,
 .modal3 .modal-content3 iframe,
 .modal3 .modal-content4 iframe,
 .modal3 .modal-contentinfo iframe,
+.modal3 .modal-contentingresso iframe,
 .modal4 .modal-content1 iframe,
 .modal4 .modal-content2 iframe,
 .modal4 .modal-content3 iframe,
 .modal4 .modal-content4 iframe,
 .modal4 .modal-contentinfo iframe,
+.modal4 .modal-contentingresso iframe,
 .modalinfo .modal-content1 iframe,
 .modalinfo .modal-content2 iframe,
 .modalinfo .modal-content3 iframe,
 .modalinfo .modal-content4 iframe,
-.modalinfo .modal-contentinfo iframe {
+.modalinfo .modal-contentinfo iframe,
+.modalinfo .modal-contentingresso iframe,
+.modalingresso .modal-content1 iframe,
+.modalingresso .modal-content2 iframe,
+.modalingresso .modal-content3 iframe,
+.modalingresso .modal-content4 iframe,
+.modalingresso .modal-contentinfo iframe,
+.modalingresso .modal-contentingresso iframe {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -595,26 +618,79 @@ section h1::before {
 .modal1 .modal-content3 .service,
 .modal1 .modal-content4 .service,
 .modal1 .modal-contentinfo .service,
+.modal1 .modal-contentingresso .service,
 .modal2 .modal-content1 .service,
 .modal2 .modal-content2 .service,
 .modal2 .modal-content3 .service,
 .modal2 .modal-content4 .service,
 .modal2 .modal-contentinfo .service,
+.modal2 .modal-contentingresso .service,
 .modal3 .modal-content1 .service,
 .modal3 .modal-content2 .service,
 .modal3 .modal-content3 .service,
 .modal3 .modal-content4 .service,
 .modal3 .modal-contentinfo .service,
+.modal3 .modal-contentingresso .service,
 .modal4 .modal-content1 .service,
 .modal4 .modal-content2 .service,
 .modal4 .modal-content3 .service,
 .modal4 .modal-content4 .service,
 .modal4 .modal-contentinfo .service,
+.modal4 .modal-contentingresso .service,
 .modalinfo .modal-content1 .service,
 .modalinfo .modal-content2 .service,
 .modalinfo .modal-content3 .service,
 .modalinfo .modal-content4 .service,
-.modalinfo .modal-contentinfo .service {
+.modalinfo .modal-contentinfo .service,
+.modalinfo .modal-contentingresso .service,
+.modalingresso .modal-content1 .service,
+.modalingresso .modal-content2 .service,
+.modalingresso .modal-content3 .service,
+.modalingresso .modal-content4 .service,
+.modalingresso .modal-contentinfo .service,
+.modalingresso .modal-contentingresso .service {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 80%;
+}
+
+.modal1 .modal-content1 .informacao,
+.modal1 .modal-content2 .informacao,
+.modal1 .modal-content3 .informacao,
+.modal1 .modal-content4 .informacao,
+.modal1 .modal-contentinfo .informacao,
+.modal1 .modal-contentingresso .informacao,
+.modal2 .modal-content1 .informacao,
+.modal2 .modal-content2 .informacao,
+.modal2 .modal-content3 .informacao,
+.modal2 .modal-content4 .informacao,
+.modal2 .modal-contentinfo .informacao,
+.modal2 .modal-contentingresso .informacao,
+.modal3 .modal-content1 .informacao,
+.modal3 .modal-content2 .informacao,
+.modal3 .modal-content3 .informacao,
+.modal3 .modal-content4 .informacao,
+.modal3 .modal-contentinfo .informacao,
+.modal3 .modal-contentingresso .informacao,
+.modal4 .modal-content1 .informacao,
+.modal4 .modal-content2 .informacao,
+.modal4 .modal-content3 .informacao,
+.modal4 .modal-content4 .informacao,
+.modal4 .modal-contentinfo .informacao,
+.modal4 .modal-contentingresso .informacao,
+.modalinfo .modal-content1 .informacao,
+.modalinfo .modal-content2 .informacao,
+.modalinfo .modal-content3 .informacao,
+.modalinfo .modal-content4 .informacao,
+.modalinfo .modal-contentinfo .informacao,
+.modalinfo .modal-contentingresso .informacao,
+.modalingresso .modal-content1 .informacao,
+.modalingresso .modal-content2 .informacao,
+.modalingresso .modal-content3 .informacao,
+.modalingresso .modal-content4 .informacao,
+.modalingresso .modal-contentinfo .informacao,
+.modalingresso .modal-contentingresso .informacao {
   margin: 0;
   padding: 10px;
   width: 100%;
@@ -626,126 +702,217 @@ section h1::before {
 .modal1 .modal-content1 .close3,
 .modal1 .modal-content1 .close4,
 .modal1 .modal-content1 .closeinfo,
+.modal1 .modal-content1 .closeingresso,
 .modal1 .modal-content2 .close1,
 .modal1 .modal-content2 .close2,
 .modal1 .modal-content2 .close3,
 .modal1 .modal-content2 .close4,
 .modal1 .modal-content2 .closeinfo,
+.modal1 .modal-content2 .closeingresso,
 .modal1 .modal-content3 .close1,
 .modal1 .modal-content3 .close2,
 .modal1 .modal-content3 .close3,
 .modal1 .modal-content3 .close4,
 .modal1 .modal-content3 .closeinfo,
+.modal1 .modal-content3 .closeingresso,
 .modal1 .modal-content4 .close1,
 .modal1 .modal-content4 .close2,
 .modal1 .modal-content4 .close3,
 .modal1 .modal-content4 .close4,
 .modal1 .modal-content4 .closeinfo,
+.modal1 .modal-content4 .closeingresso,
 .modal1 .modal-contentinfo .close1,
 .modal1 .modal-contentinfo .close2,
 .modal1 .modal-contentinfo .close3,
 .modal1 .modal-contentinfo .close4,
 .modal1 .modal-contentinfo .closeinfo,
+.modal1 .modal-contentinfo .closeingresso,
+.modal1 .modal-contentingresso .close1,
+.modal1 .modal-contentingresso .close2,
+.modal1 .modal-contentingresso .close3,
+.modal1 .modal-contentingresso .close4,
+.modal1 .modal-contentingresso .closeinfo,
+.modal1 .modal-contentingresso .closeingresso,
 .modal2 .modal-content1 .close1,
 .modal2 .modal-content1 .close2,
 .modal2 .modal-content1 .close3,
 .modal2 .modal-content1 .close4,
 .modal2 .modal-content1 .closeinfo,
+.modal2 .modal-content1 .closeingresso,
 .modal2 .modal-content2 .close1,
 .modal2 .modal-content2 .close2,
 .modal2 .modal-content2 .close3,
 .modal2 .modal-content2 .close4,
 .modal2 .modal-content2 .closeinfo,
+.modal2 .modal-content2 .closeingresso,
 .modal2 .modal-content3 .close1,
 .modal2 .modal-content3 .close2,
 .modal2 .modal-content3 .close3,
 .modal2 .modal-content3 .close4,
 .modal2 .modal-content3 .closeinfo,
+.modal2 .modal-content3 .closeingresso,
 .modal2 .modal-content4 .close1,
 .modal2 .modal-content4 .close2,
 .modal2 .modal-content4 .close3,
 .modal2 .modal-content4 .close4,
 .modal2 .modal-content4 .closeinfo,
+.modal2 .modal-content4 .closeingresso,
 .modal2 .modal-contentinfo .close1,
 .modal2 .modal-contentinfo .close2,
 .modal2 .modal-contentinfo .close3,
 .modal2 .modal-contentinfo .close4,
 .modal2 .modal-contentinfo .closeinfo,
+.modal2 .modal-contentinfo .closeingresso,
+.modal2 .modal-contentingresso .close1,
+.modal2 .modal-contentingresso .close2,
+.modal2 .modal-contentingresso .close3,
+.modal2 .modal-contentingresso .close4,
+.modal2 .modal-contentingresso .closeinfo,
+.modal2 .modal-contentingresso .closeingresso,
 .modal3 .modal-content1 .close1,
 .modal3 .modal-content1 .close2,
 .modal3 .modal-content1 .close3,
 .modal3 .modal-content1 .close4,
 .modal3 .modal-content1 .closeinfo,
+.modal3 .modal-content1 .closeingresso,
 .modal3 .modal-content2 .close1,
 .modal3 .modal-content2 .close2,
 .modal3 .modal-content2 .close3,
 .modal3 .modal-content2 .close4,
 .modal3 .modal-content2 .closeinfo,
+.modal3 .modal-content2 .closeingresso,
 .modal3 .modal-content3 .close1,
 .modal3 .modal-content3 .close2,
 .modal3 .modal-content3 .close3,
 .modal3 .modal-content3 .close4,
 .modal3 .modal-content3 .closeinfo,
+.modal3 .modal-content3 .closeingresso,
 .modal3 .modal-content4 .close1,
 .modal3 .modal-content4 .close2,
 .modal3 .modal-content4 .close3,
 .modal3 .modal-content4 .close4,
 .modal3 .modal-content4 .closeinfo,
+.modal3 .modal-content4 .closeingresso,
 .modal3 .modal-contentinfo .close1,
 .modal3 .modal-contentinfo .close2,
 .modal3 .modal-contentinfo .close3,
 .modal3 .modal-contentinfo .close4,
 .modal3 .modal-contentinfo .closeinfo,
+.modal3 .modal-contentinfo .closeingresso,
+.modal3 .modal-contentingresso .close1,
+.modal3 .modal-contentingresso .close2,
+.modal3 .modal-contentingresso .close3,
+.modal3 .modal-contentingresso .close4,
+.modal3 .modal-contentingresso .closeinfo,
+.modal3 .modal-contentingresso .closeingresso,
 .modal4 .modal-content1 .close1,
 .modal4 .modal-content1 .close2,
 .modal4 .modal-content1 .close3,
 .modal4 .modal-content1 .close4,
 .modal4 .modal-content1 .closeinfo,
+.modal4 .modal-content1 .closeingresso,
 .modal4 .modal-content2 .close1,
 .modal4 .modal-content2 .close2,
 .modal4 .modal-content2 .close3,
 .modal4 .modal-content2 .close4,
 .modal4 .modal-content2 .closeinfo,
+.modal4 .modal-content2 .closeingresso,
 .modal4 .modal-content3 .close1,
 .modal4 .modal-content3 .close2,
 .modal4 .modal-content3 .close3,
 .modal4 .modal-content3 .close4,
 .modal4 .modal-content3 .closeinfo,
+.modal4 .modal-content3 .closeingresso,
 .modal4 .modal-content4 .close1,
 .modal4 .modal-content4 .close2,
 .modal4 .modal-content4 .close3,
 .modal4 .modal-content4 .close4,
 .modal4 .modal-content4 .closeinfo,
+.modal4 .modal-content4 .closeingresso,
 .modal4 .modal-contentinfo .close1,
 .modal4 .modal-contentinfo .close2,
 .modal4 .modal-contentinfo .close3,
 .modal4 .modal-contentinfo .close4,
 .modal4 .modal-contentinfo .closeinfo,
+.modal4 .modal-contentinfo .closeingresso,
+.modal4 .modal-contentingresso .close1,
+.modal4 .modal-contentingresso .close2,
+.modal4 .modal-contentingresso .close3,
+.modal4 .modal-contentingresso .close4,
+.modal4 .modal-contentingresso .closeinfo,
+.modal4 .modal-contentingresso .closeingresso,
 .modalinfo .modal-content1 .close1,
 .modalinfo .modal-content1 .close2,
 .modalinfo .modal-content1 .close3,
 .modalinfo .modal-content1 .close4,
 .modalinfo .modal-content1 .closeinfo,
+.modalinfo .modal-content1 .closeingresso,
 .modalinfo .modal-content2 .close1,
 .modalinfo .modal-content2 .close2,
 .modalinfo .modal-content2 .close3,
 .modalinfo .modal-content2 .close4,
 .modalinfo .modal-content2 .closeinfo,
+.modalinfo .modal-content2 .closeingresso,
 .modalinfo .modal-content3 .close1,
 .modalinfo .modal-content3 .close2,
 .modalinfo .modal-content3 .close3,
 .modalinfo .modal-content3 .close4,
 .modalinfo .modal-content3 .closeinfo,
+.modalinfo .modal-content3 .closeingresso,
 .modalinfo .modal-content4 .close1,
 .modalinfo .modal-content4 .close2,
 .modalinfo .modal-content4 .close3,
 .modalinfo .modal-content4 .close4,
 .modalinfo .modal-content4 .closeinfo,
+.modalinfo .modal-content4 .closeingresso,
 .modalinfo .modal-contentinfo .close1,
 .modalinfo .modal-contentinfo .close2,
 .modalinfo .modal-contentinfo .close3,
 .modalinfo .modal-contentinfo .close4,
-.modalinfo .modal-contentinfo .closeinfo {
+.modalinfo .modal-contentinfo .closeinfo,
+.modalinfo .modal-contentinfo .closeingresso,
+.modalinfo .modal-contentingresso .close1,
+.modalinfo .modal-contentingresso .close2,
+.modalinfo .modal-contentingresso .close3,
+.modalinfo .modal-contentingresso .close4,
+.modalinfo .modal-contentingresso .closeinfo,
+.modalinfo .modal-contentingresso .closeingresso,
+.modalingresso .modal-content1 .close1,
+.modalingresso .modal-content1 .close2,
+.modalingresso .modal-content1 .close3,
+.modalingresso .modal-content1 .close4,
+.modalingresso .modal-content1 .closeinfo,
+.modalingresso .modal-content1 .closeingresso,
+.modalingresso .modal-content2 .close1,
+.modalingresso .modal-content2 .close2,
+.modalingresso .modal-content2 .close3,
+.modalingresso .modal-content2 .close4,
+.modalingresso .modal-content2 .closeinfo,
+.modalingresso .modal-content2 .closeingresso,
+.modalingresso .modal-content3 .close1,
+.modalingresso .modal-content3 .close2,
+.modalingresso .modal-content3 .close3,
+.modalingresso .modal-content3 .close4,
+.modalingresso .modal-content3 .closeinfo,
+.modalingresso .modal-content3 .closeingresso,
+.modalingresso .modal-content4 .close1,
+.modalingresso .modal-content4 .close2,
+.modalingresso .modal-content4 .close3,
+.modalingresso .modal-content4 .close4,
+.modalingresso .modal-content4 .closeinfo,
+.modalingresso .modal-content4 .closeingresso,
+.modalingresso .modal-contentinfo .close1,
+.modalingresso .modal-contentinfo .close2,
+.modalingresso .modal-contentinfo .close3,
+.modalingresso .modal-contentinfo .close4,
+.modalingresso .modal-contentinfo .closeinfo,
+.modalingresso .modal-contentinfo .closeingresso,
+.modalingresso .modal-contentingresso .close1,
+.modalingresso .modal-contentingresso .close2,
+.modalingresso .modal-contentingresso .close3,
+.modalingresso .modal-contentingresso .close4,
+.modalingresso .modal-contentingresso .closeinfo,
+.modalingresso .modal-contentingresso .closeingresso {
   background-color: rgba(99, 0, 0, 0.686);
   color: #fff;
   font-size: 2em;
@@ -764,126 +931,217 @@ section h1::before {
 .modal1 .modal-content1 .close3:hover,
 .modal1 .modal-content1 .close4:hover,
 .modal1 .modal-content1 .closeinfo:hover,
+.modal1 .modal-content1 .closeingresso:hover,
 .modal1 .modal-content2 .close1:hover,
 .modal1 .modal-content2 .close2:hover,
 .modal1 .modal-content2 .close3:hover,
 .modal1 .modal-content2 .close4:hover,
 .modal1 .modal-content2 .closeinfo:hover,
+.modal1 .modal-content2 .closeingresso:hover,
 .modal1 .modal-content3 .close1:hover,
 .modal1 .modal-content3 .close2:hover,
 .modal1 .modal-content3 .close3:hover,
 .modal1 .modal-content3 .close4:hover,
 .modal1 .modal-content3 .closeinfo:hover,
+.modal1 .modal-content3 .closeingresso:hover,
 .modal1 .modal-content4 .close1:hover,
 .modal1 .modal-content4 .close2:hover,
 .modal1 .modal-content4 .close3:hover,
 .modal1 .modal-content4 .close4:hover,
 .modal1 .modal-content4 .closeinfo:hover,
+.modal1 .modal-content4 .closeingresso:hover,
 .modal1 .modal-contentinfo .close1:hover,
 .modal1 .modal-contentinfo .close2:hover,
 .modal1 .modal-contentinfo .close3:hover,
 .modal1 .modal-contentinfo .close4:hover,
 .modal1 .modal-contentinfo .closeinfo:hover,
+.modal1 .modal-contentinfo .closeingresso:hover,
+.modal1 .modal-contentingresso .close1:hover,
+.modal1 .modal-contentingresso .close2:hover,
+.modal1 .modal-contentingresso .close3:hover,
+.modal1 .modal-contentingresso .close4:hover,
+.modal1 .modal-contentingresso .closeinfo:hover,
+.modal1 .modal-contentingresso .closeingresso:hover,
 .modal2 .modal-content1 .close1:hover,
 .modal2 .modal-content1 .close2:hover,
 .modal2 .modal-content1 .close3:hover,
 .modal2 .modal-content1 .close4:hover,
 .modal2 .modal-content1 .closeinfo:hover,
+.modal2 .modal-content1 .closeingresso:hover,
 .modal2 .modal-content2 .close1:hover,
 .modal2 .modal-content2 .close2:hover,
 .modal2 .modal-content2 .close3:hover,
 .modal2 .modal-content2 .close4:hover,
 .modal2 .modal-content2 .closeinfo:hover,
+.modal2 .modal-content2 .closeingresso:hover,
 .modal2 .modal-content3 .close1:hover,
 .modal2 .modal-content3 .close2:hover,
 .modal2 .modal-content3 .close3:hover,
 .modal2 .modal-content3 .close4:hover,
 .modal2 .modal-content3 .closeinfo:hover,
+.modal2 .modal-content3 .closeingresso:hover,
 .modal2 .modal-content4 .close1:hover,
 .modal2 .modal-content4 .close2:hover,
 .modal2 .modal-content4 .close3:hover,
 .modal2 .modal-content4 .close4:hover,
 .modal2 .modal-content4 .closeinfo:hover,
+.modal2 .modal-content4 .closeingresso:hover,
 .modal2 .modal-contentinfo .close1:hover,
 .modal2 .modal-contentinfo .close2:hover,
 .modal2 .modal-contentinfo .close3:hover,
 .modal2 .modal-contentinfo .close4:hover,
 .modal2 .modal-contentinfo .closeinfo:hover,
+.modal2 .modal-contentinfo .closeingresso:hover,
+.modal2 .modal-contentingresso .close1:hover,
+.modal2 .modal-contentingresso .close2:hover,
+.modal2 .modal-contentingresso .close3:hover,
+.modal2 .modal-contentingresso .close4:hover,
+.modal2 .modal-contentingresso .closeinfo:hover,
+.modal2 .modal-contentingresso .closeingresso:hover,
 .modal3 .modal-content1 .close1:hover,
 .modal3 .modal-content1 .close2:hover,
 .modal3 .modal-content1 .close3:hover,
 .modal3 .modal-content1 .close4:hover,
 .modal3 .modal-content1 .closeinfo:hover,
+.modal3 .modal-content1 .closeingresso:hover,
 .modal3 .modal-content2 .close1:hover,
 .modal3 .modal-content2 .close2:hover,
 .modal3 .modal-content2 .close3:hover,
 .modal3 .modal-content2 .close4:hover,
 .modal3 .modal-content2 .closeinfo:hover,
+.modal3 .modal-content2 .closeingresso:hover,
 .modal3 .modal-content3 .close1:hover,
 .modal3 .modal-content3 .close2:hover,
 .modal3 .modal-content3 .close3:hover,
 .modal3 .modal-content3 .close4:hover,
 .modal3 .modal-content3 .closeinfo:hover,
+.modal3 .modal-content3 .closeingresso:hover,
 .modal3 .modal-content4 .close1:hover,
 .modal3 .modal-content4 .close2:hover,
 .modal3 .modal-content4 .close3:hover,
 .modal3 .modal-content4 .close4:hover,
 .modal3 .modal-content4 .closeinfo:hover,
+.modal3 .modal-content4 .closeingresso:hover,
 .modal3 .modal-contentinfo .close1:hover,
 .modal3 .modal-contentinfo .close2:hover,
 .modal3 .modal-contentinfo .close3:hover,
 .modal3 .modal-contentinfo .close4:hover,
 .modal3 .modal-contentinfo .closeinfo:hover,
+.modal3 .modal-contentinfo .closeingresso:hover,
+.modal3 .modal-contentingresso .close1:hover,
+.modal3 .modal-contentingresso .close2:hover,
+.modal3 .modal-contentingresso .close3:hover,
+.modal3 .modal-contentingresso .close4:hover,
+.modal3 .modal-contentingresso .closeinfo:hover,
+.modal3 .modal-contentingresso .closeingresso:hover,
 .modal4 .modal-content1 .close1:hover,
 .modal4 .modal-content1 .close2:hover,
 .modal4 .modal-content1 .close3:hover,
 .modal4 .modal-content1 .close4:hover,
 .modal4 .modal-content1 .closeinfo:hover,
+.modal4 .modal-content1 .closeingresso:hover,
 .modal4 .modal-content2 .close1:hover,
 .modal4 .modal-content2 .close2:hover,
 .modal4 .modal-content2 .close3:hover,
 .modal4 .modal-content2 .close4:hover,
 .modal4 .modal-content2 .closeinfo:hover,
+.modal4 .modal-content2 .closeingresso:hover,
 .modal4 .modal-content3 .close1:hover,
 .modal4 .modal-content3 .close2:hover,
 .modal4 .modal-content3 .close3:hover,
 .modal4 .modal-content3 .close4:hover,
 .modal4 .modal-content3 .closeinfo:hover,
+.modal4 .modal-content3 .closeingresso:hover,
 .modal4 .modal-content4 .close1:hover,
 .modal4 .modal-content4 .close2:hover,
 .modal4 .modal-content4 .close3:hover,
 .modal4 .modal-content4 .close4:hover,
 .modal4 .modal-content4 .closeinfo:hover,
+.modal4 .modal-content4 .closeingresso:hover,
 .modal4 .modal-contentinfo .close1:hover,
 .modal4 .modal-contentinfo .close2:hover,
 .modal4 .modal-contentinfo .close3:hover,
 .modal4 .modal-contentinfo .close4:hover,
 .modal4 .modal-contentinfo .closeinfo:hover,
+.modal4 .modal-contentinfo .closeingresso:hover,
+.modal4 .modal-contentingresso .close1:hover,
+.modal4 .modal-contentingresso .close2:hover,
+.modal4 .modal-contentingresso .close3:hover,
+.modal4 .modal-contentingresso .close4:hover,
+.modal4 .modal-contentingresso .closeinfo:hover,
+.modal4 .modal-contentingresso .closeingresso:hover,
 .modalinfo .modal-content1 .close1:hover,
 .modalinfo .modal-content1 .close2:hover,
 .modalinfo .modal-content1 .close3:hover,
 .modalinfo .modal-content1 .close4:hover,
 .modalinfo .modal-content1 .closeinfo:hover,
+.modalinfo .modal-content1 .closeingresso:hover,
 .modalinfo .modal-content2 .close1:hover,
 .modalinfo .modal-content2 .close2:hover,
 .modalinfo .modal-content2 .close3:hover,
 .modalinfo .modal-content2 .close4:hover,
 .modalinfo .modal-content2 .closeinfo:hover,
+.modalinfo .modal-content2 .closeingresso:hover,
 .modalinfo .modal-content3 .close1:hover,
 .modalinfo .modal-content3 .close2:hover,
 .modalinfo .modal-content3 .close3:hover,
 .modalinfo .modal-content3 .close4:hover,
 .modalinfo .modal-content3 .closeinfo:hover,
+.modalinfo .modal-content3 .closeingresso:hover,
 .modalinfo .modal-content4 .close1:hover,
 .modalinfo .modal-content4 .close2:hover,
 .modalinfo .modal-content4 .close3:hover,
 .modalinfo .modal-content4 .close4:hover,
 .modalinfo .modal-content4 .closeinfo:hover,
+.modalinfo .modal-content4 .closeingresso:hover,
 .modalinfo .modal-contentinfo .close1:hover,
 .modalinfo .modal-contentinfo .close2:hover,
 .modalinfo .modal-contentinfo .close3:hover,
 .modalinfo .modal-contentinfo .close4:hover,
-.modalinfo .modal-contentinfo .closeinfo:hover {
+.modalinfo .modal-contentinfo .closeinfo:hover,
+.modalinfo .modal-contentinfo .closeingresso:hover,
+.modalinfo .modal-contentingresso .close1:hover,
+.modalinfo .modal-contentingresso .close2:hover,
+.modalinfo .modal-contentingresso .close3:hover,
+.modalinfo .modal-contentingresso .close4:hover,
+.modalinfo .modal-contentingresso .closeinfo:hover,
+.modalinfo .modal-contentingresso .closeingresso:hover,
+.modalingresso .modal-content1 .close1:hover,
+.modalingresso .modal-content1 .close2:hover,
+.modalingresso .modal-content1 .close3:hover,
+.modalingresso .modal-content1 .close4:hover,
+.modalingresso .modal-content1 .closeinfo:hover,
+.modalingresso .modal-content1 .closeingresso:hover,
+.modalingresso .modal-content2 .close1:hover,
+.modalingresso .modal-content2 .close2:hover,
+.modalingresso .modal-content2 .close3:hover,
+.modalingresso .modal-content2 .close4:hover,
+.modalingresso .modal-content2 .closeinfo:hover,
+.modalingresso .modal-content2 .closeingresso:hover,
+.modalingresso .modal-content3 .close1:hover,
+.modalingresso .modal-content3 .close2:hover,
+.modalingresso .modal-content3 .close3:hover,
+.modalingresso .modal-content3 .close4:hover,
+.modalingresso .modal-content3 .closeinfo:hover,
+.modalingresso .modal-content3 .closeingresso:hover,
+.modalingresso .modal-content4 .close1:hover,
+.modalingresso .modal-content4 .close2:hover,
+.modalingresso .modal-content4 .close3:hover,
+.modalingresso .modal-content4 .close4:hover,
+.modalingresso .modal-content4 .closeinfo:hover,
+.modalingresso .modal-content4 .closeingresso:hover,
+.modalingresso .modal-contentinfo .close1:hover,
+.modalingresso .modal-contentinfo .close2:hover,
+.modalingresso .modal-contentinfo .close3:hover,
+.modalingresso .modal-contentinfo .close4:hover,
+.modalingresso .modal-contentinfo .closeinfo:hover,
+.modalingresso .modal-contentinfo .closeingresso:hover,
+.modalingresso .modal-contentingresso .close1:hover,
+.modalingresso .modal-contentingresso .close2:hover,
+.modalingresso .modal-contentingresso .close3:hover,
+.modalingresso .modal-contentingresso .close4:hover,
+.modalingresso .modal-contentingresso .closeinfo:hover,
+.modalingresso .modal-contentingresso .closeingresso:hover {
   background-color: red;
   text-decoration: none;
   cursor: pointer;
@@ -899,24 +1157,27 @@ section h1::before {
   padding: 0;
 }
 
-.em-cartaz .service {
-  position: relative;
-  float: right;
-  text-align: left;
-  max-width: 40vw;
-  max-height: 60vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 1px #000 solid;
-  padding: 10px;
-  margin-top: 8%;
+.em-cartaz h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 2em;
 }
 
-#myBtninfo {
+.em-cartaz p {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.botaoinfo {
   height: 4em;
-  border: 1em;
+  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -924,12 +1185,80 @@ section h1::before {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin: 5px;
+  overflow: hidden;
 }
 
-#myBtninfo p {
-  font-size: 1.8em;
+.botaoinfo:hover {
+  z-index: 10;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
+          box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
+}
+
+.botaoinfo p,
+.botaoinfo i {
+  font-size: 1.6em;
   font-weight: 600;
   margin: 0;
+}
+
+.botaoingresso {
+  height: 4em;
+  min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.botaoingresso:hover {
+  z-index: 10;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
+          box-shadow: 8px 8px 20px -5px rgba(255, 255, 255, 0.59);
+}
+
+.botaoingresso p,
+.botaoingresso i {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.modalingresso i {
+  font-size: 2em;
+  padding: 0 2%;
+}
+
+.service,
+.informacao {
+  position: relative;
+  text-align: left;
+  max-width: 40vw;
+  max-height: 60vh;
+  background-color: black;
+  border: 1px #000 solid;
+  padding: 10px;
+  margin-top: 8%;
 }
 
 /*===================================== FORMULÁRIO =====================================*/
@@ -1281,6 +1610,18 @@ form .enviar {
   .navoverlay li {
     margin: 0;
     padding: 0;
+  }
+  .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
