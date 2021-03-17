@@ -62,20 +62,23 @@ header {
     float: right;
 
     a {
-      padding: 0 10px;
+      padding: 0 8px;
       display: inline-block;
 
       img {
-        background-color: transparent;
+        background-color: #fff;
         border-radius: 50%;
-        box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.59);
-        position: sticky;
-        position: fixed;
-        top: 15px;
-        left: 20px;
+        box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.816);
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        z-index: 99;
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        transition: all .6s ease-in-out;
 
-        a {
-          width: 100px;
+        &:hover {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
         }
       }
 
@@ -118,7 +121,71 @@ header {
     margin: 40px;
   }
 }
+.footer {
+  background-color: #222222;
+  border-top: rgb(158, 158, 158) 1px solid;
+  min-height: 70px;
+  grid-area: social; display: grid; /* ACTING AS A GRID CONTAINER */ 
+  grid-template-columns: repeat(1, 1fr); 
+  grid-template-rows: auto auto; 
+  justify-items: center;
 
+  .footersocial {
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      background: #f5f5f5;
+      width: 40px;
+      height: 40px;
+      color: #131212;
+      border-radius: 4px;
+      margin: 10px;
+      padding: 6px 1px;
+      transition: all 0.3s;
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: #fff;
+        background: rgb(255, 255, 255);
+        box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+        }
+
+        .fa,
+        .fab,
+        .fas {
+          font-size: 1.8em;
+          color: #000;
+        }
+      }
+  }
+
+  .footertxt {
+    place-items: center;
+
+    h2 {
+      font-size: 1.1em;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 5px;
+    }
+
+    p {
+      font-size: .8em;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+}
 .navoverlay {
   position: absolute;
   z-index: 2;
@@ -256,6 +323,7 @@ header {
   }
 }
 .mn-social-bottom:hover {
+  cursor: pointer;
   color: #fff;
   background: rgba(53, 53, 53, 0.6);
   box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);

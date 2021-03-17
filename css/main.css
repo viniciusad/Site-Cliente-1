@@ -83,24 +83,27 @@ header .links {
 }
 
 header .links a {
-  padding: 0 10px;
+  padding: 0 8px;
   display: inline-block;
 }
 
 header .links a img {
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 50%;
-  -webkit-box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.59);
-          box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.59);
-  position: -webkit-sticky;
-  position: sticky;
-  position: fixed;
-  top: 15px;
-  left: 20px;
+  -webkit-box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.816);
+          box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.816);
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  z-index: 99;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 
-header .links a img a {
-  width: 100px;
+header .links a img:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 header .links a h2 {
@@ -143,6 +146,89 @@ header .menu-btn {
   float: right;
   cursor: pointer;
   margin: 40px;
+}
+
+.footer {
+  background-color: #222222;
+  border-top: #9e9e9e 1px solid;
+  min-height: 70px;
+  grid-area: social;
+  display: -ms-grid;
+  display: grid;
+  /* ACTING AS A GRID CONTAINER */
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  justify-items: center;
+}
+
+.footer .footersocial {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer .footersocial a {
+  text-decoration: none;
+  background: #f5f5f5;
+  width: 40px;
+  height: 40px;
+  color: #131212;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 6px 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.footer .footersocial a:hover {
+  cursor: pointer;
+  color: #fff;
+  background: white;
+  -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+          box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
+}
+
+.footer .footersocial a .fa,
+.footer .footersocial a .fab,
+.footer .footersocial a .fas {
+  font-size: 1.8em;
+  color: #000;
+}
+
+.footer .footertxt {
+  place-items: center;
+}
+
+.footer .footertxt h2 {
+  font-size: 1.1em;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 5px;
+}
+
+.footer .footertxt p {
+  font-size: .8em;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 10px;
 }
 
 .navoverlay {
@@ -318,6 +404,7 @@ header .menu-btn {
 }
 
 .mn-social-bottom:hover {
+  cursor: pointer;
   color: #fff;
   background: rgba(53, 53, 53, 0.6);
   -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.59);
