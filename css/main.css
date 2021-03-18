@@ -99,11 +99,13 @@ header .links a img {
   -webkit-transition: -webkit-transform .6s ease-in-out;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 header .links a img:hover {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 header .links a h2 {
@@ -148,10 +150,26 @@ header .menu-btn {
   margin: 40px;
 }
 
+.logo {
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.logo:hover {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .footer {
   background-color: #222222;
   border-top: #9e9e9e 1px solid;
   min-height: 70px;
+  margin-top: 2em;
   grid-area: social;
   display: -ms-grid;
   display: grid;
@@ -358,7 +376,11 @@ header .menu-btn {
 
 /*===================================== SHARE BUTTON =====================================*/
 .mn-social-bottom-c {
-  margin: auto;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
 }
 
 .mn-social-bottom-c p {
@@ -1360,7 +1382,8 @@ header .menu-btn {
   margin-top: 8%;
 }
 
-.service h3, .service p,
+.service h3,
+.service p,
 .informacao h3,
 .informacao p {
   width: 100%;
@@ -1405,20 +1428,50 @@ form .enviar {
 
 /* =============== Mapeamento Páginas NOTÍCIAS =============== */
 .linkmap {
-  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
   white-space: nowrap;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 0.8em;
+  padding-bottom: 0;
 }
 
-.linkmap a {
+.linkmap span {
+  background-color: #000;
+}
+
+.linkmap span a {
+  font-weight: 300;
+  font-size: 0.8em;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .linkmap-separator {
   color: white;
   opacity: 0.8;
+}
+
+.noticia-1 {
+  background-image: url("../assets/turne/peca-online.jpg");
+}
+
+.noticia-1 div {
+  min-height: 30vh;
+  overflow: hidden;
+}
+
+.noticia-2,
+.noticia-3 {
+  min-height: 35vh;
+  overflow: hidden;
 }
 
 /* =============== BOTÃO VOLTAR PARA O TOPO =============== */
