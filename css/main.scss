@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body,
 html {
   background-color: #000;
@@ -20,21 +29,16 @@ html {
 
   main {
     padding-top: 4em;
+    min-height: 80vh;
   }
 
   section {
-    padding-top: 2em;
+    padding-top: 3em;
 
     h1 {
       font-size: 3em;
       color: #fff;
       width: 70%;
-
-      &::before {
-        content: " ";
-        border-top: 5px solid rgba(153, 153, 153, 0.5);
-        display: block;
-      }
     }
   }
 }
@@ -78,13 +82,13 @@ header {
         left: 15px;
         z-index: 99;
         -webkit-transition: -webkit-transform .6s ease-in-out;
-        transition: all .6s ease-in-out;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
+        transition: all 1s ease-in-out;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
 
         &:hover {
-          -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+          -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
         }
       }
 
@@ -136,20 +140,22 @@ header {
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: -webkit-transform .6s ease-in-out;
-  transition: all .6s ease-in-out;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  transition: all 1s ease-in-out;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 
   &:hover {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
   }
 }
 
 .footer {
+  bottom: 0;
+  width: 100%;
   background-color: #222222;
   border-top: rgb(158, 158, 158) 1px solid;
-  min-height: 70px;
+  min-height: 80px;
   margin-top: 2em;
   grid-area: social;
   display: grid;
@@ -812,6 +818,41 @@ form {
   overflow: hidden;
 }
 
+/*===================================== AGENDA =====================================*/
+.accordion-item {
+  margin-bottom: 1em;
+}
+
+.accordion-button h2 {
+  margin: 0;
+}
+
+.accordion-header:focus {
+  z-index: 3;
+  border-color: rgb(255, 255, 255);
+}
+.accordion-button:focus {
+  z-index: 3;
+  border: none;
+}
+.accordion-button:hover > h2 {
+  color: #000;
+}
+.accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: rgba(75, 75, 75, 0.6);
+  box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.59);
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  margin-left: auto;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 3rem;
+}
 /* =============== BOTÃO VOLTAR PARA O TOPO =============== */
 #back-top {
   display: none;
