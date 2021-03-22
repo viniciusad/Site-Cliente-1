@@ -127,11 +127,72 @@
           <p id="turne" class="titulotxt">
             <h1>Turnês</h1>
           </p>
-          <p></p>
         </div>
+        <hr>
+        <div class="em-cartaz">
+          <a class="img-fluid p-0" href="ingressos.html">
+            <h2 class="text-white">Em cartaz:</h2>
+            <h1 class="text-white card-footer">Caros Ouvintes</h1>
+            <img src="./assets/turne/em-cartaz-caros-ouvintes.jpg" />
+          </a>
+        </div>
+        <div class="container-fluid">
+          <div class="d-flex justify-content-center">
+            <!--================= Informacao =================-->
+            <div class="justify-content-center rounded-0">
+              <button id="myBtninfo" class="botaoinfo btn btn-success btn-outline-light">
+                <p>Informações</p>
+              </button>
+            </div>
+            <!--================= Conteúdo do Modal Informacao =================-->
+            <div id="myModalinfo" class="modalinfo">
+              <div class="modal-contentinfo">
+                <div class="align-content-center">
+                  <span class="closeinfo p-4">Fechar</span>
+                </div>
+                <div class="informacao">
+                  <h3>Informações</h3>
+                  <p>Teatro Vivo – Av. Dr. Chucri Zaidan, 2.460</p>
+                  <p>Temporada: 4 de março a 29 de abril, quartas, às 20h.</p>
+                  <p>Ingressos: R$50 (inteira) e R$25 (meia-entrada)</p>
+                  <p>Capacidade: 274 lugares</p>
+                  <p>Bilheteria: (21) 1234-5678</p>
+                  <p>Vendas online: www.ingresso.com.br</p>
+                  <p>Duração: 100 minutos</p>
+                  <p>Classificação: 12 anos</p>
+                </div>
+              </div>
+            </div>
+        
+            <!--================= Abrir Modal Ingresso =================-->
+            <div class="justify-content-center rounded-0">
+              <button id="myBtningresso" class="botaoingresso btn btn-success btn-outline-light">
+                <p class="titulotxt">Ingressos</p>
+              </button>
+            </div>
+            <!--================= Conteúdo do Modal Ingresso =================-->
+            <div id="myModalingresso" class="modalingresso">
+              <div class="modal-contentingresso">
+                <div class="align-content-center">
+                  <span class="closeingresso p-4">Fechar</span>
+                </div>
+                <div class="service">
+                  <h3>Comprar Ingresso</h3>
+                  <p>Você será redirecionado para INGRESSO.COM</p>
+                  <a
+                    href="https://carrinho.ingresso.com/checkout/?_ga=2.191987241.2079671493.1615860082-2052579970.1614802795#/adicionar/65572927/home">
+                    <p>Link para escolher ingressos<i class="fas fa-external-link-alt"></i></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
         <!--====================================== SHARE BUTTONS ======================================-->
-        <div class="d-flex justify-content-center">
+        <div class="text-center">
           <div class="mn-social-bottom-c row p-1">
+            <h3>Compartilhe</h3>
             <a target="_blank" class="mn-social-bottom">
               <i class="fa fa-facebook"></i>
             </a>
@@ -161,6 +222,12 @@
           </div>
         </div>
         <!--====================================== END SHARE BUTTONS ======================================-->
+        <hr>
+        <div class="titulo text-center">
+          <p id="turne" class="titulotxt">
+          <h1>Turnês Anteriores</h1>
+          </p>
+        </div>
         <div class="row p-3">
           <div class="col-sm-6 pb-2">
             <div class="card overflow-hidden card-turne rounded-0">
@@ -383,10 +450,8 @@
                 </div>
                 <div class="swiper-slide img-fluid">
                   <a href="#premios">
-                    <div class="titulo w-100">
-                      <p class="titulotxt">Prêmio 2018</p>
-                    </div>
                     <img src="./assets/premios/premio-2.png" />
+                    <h2 class="card-footer text-white">Prêmio 2018</h2>
                   </a>
                 </div>
                 <div class="swiper-slide img-fluid">
@@ -396,10 +461,8 @@
                 </div>
                 <div class="swiper-slide img-fluid">
                   <a href="ingressos.html">
-                    <div class="titulo w-100">
-                      <p class="titulotxt">Garanta seu Ingresso</p>
-                    </div>
                     <img src="./assets/ingressos.png" />
+                    <h2 class="card-footer text-white">Garanta seu ingresso</h2>
                   </a>
                 </div>
               </div>
