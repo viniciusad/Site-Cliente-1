@@ -2,7 +2,7 @@ let url = window.location.href;
 let title = document.title;
 let mnsocial = document.getElementsByClassName('mn-social-bottom');
 mnsocial[0].href = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
-mnsocial[1].href = 'https://twitter.com/intent/tweet?text=' + 'Olha que legal: ' + title + ' ' + url;
+mnsocial[1].href = 'https://twitter.com/intent/tweet?text=' + '"Olha que legal: "' + title + ' ' + url;
 mnsocial[2].href = 'https://www.linkedin.com/cws/share?url=' + url;
 mnsocial[3].href = 'mailto:?&subject=' + url + '&body=' + title + ', ' + url;
 mnsocial[4].href = 'https://api.whatsapp.com/send?text=' + url;
